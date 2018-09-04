@@ -1,0 +1,25 @@
+<link rel="stylesheet" type="text/css" href="/css/newsletter.css">
+<script src="/js/newsletter.js"> </script>
+
+
+<% if (!locals.newsletterHide) { %>
+<% if (!locals.loggedIn) { %>
+<div class ="newsletter">
+
+<div class ="newsletterClose desktop" data-section-name="0">
+<input type="image" id="newsletterClose" src="/images/closeWhite.png"/>
+</div>
+
+<div class ="newsletterCopy">
+<p>Listen in,</br>New releases, exclusive collections, and unique offers.</p>
+</div>
+
+<div class ="newsletterInput">
+<div class="containerForInputs">
+<input type="text" placeholder="EMAIL ADDRESS" id="newsletterEmail"/>
+<input type="button" id="newsletterSubmit" value="SUBMIT"/>
+</div>
+</div>
+</div>
+<% } %>
+<% } %>

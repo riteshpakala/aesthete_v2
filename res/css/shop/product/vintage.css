@@ -1,0 +1,282 @@
+@font-face {
+    font-family: Campton-Light;
+    src: url("../fonts/Campton-Light.otf") format("opentype");
+}
+@font-face {
+    font-family: Campton-Bold;
+    src: url("../fonts/Campton-Bold.otf") format("opentype");
+}
+
+.controlRight input{
+	width: 20px;
+	height: 40px;
+
+	margin-top: 25vw;
+}
+
+.controlLeft input{
+	width: 20px;
+	height: 40px;
+
+	margin-top: 25vw;
+}
+
+.typeButtons{
+	display: inline-block;
+
+	position: absolute;
+
+	bottom: 5vw;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+.typeButtons input{
+	color: #FFF;
+	font-size: 12px;
+	border-radius: 4px !important;
+	border: 1px solid #FFF !important;
+	padding: 15px 35px 15px 35px;
+	height: 50px;
+}
+.typeButtonsMobile{
+	bottom: 5vw;
+}
+.typeButtonsMobile input{
+	height: 20px;
+	width: 100px;
+	font-size: 12px;
+	padding: 10px 25px 25px 25px;
+	-webkit-appearance: none;
+}
+
+.typeButtons .distressed{
+	border-right: none !important;
+	background-color: #FFF;
+	color: #000;
+	font-family: Campton-Bold !important;
+}
+.typeButtons .archived{
+	background-color: transparent;
+	border-left: none !important;
+	margin-left: -10px;
+	font-family: Campton-Bold !important;
+}
+
+.typeButtonsMobile #distressedMobile{
+	border-right: none !important;
+	background-color: #FFF;
+	color: #000;
+	padding-left: 14px;
+	padding-top: 15px;
+	padding-right: 20px !important;
+}
+.typeButtonsMobile #archivedMobile{
+	background-color: transparent;
+	border-left: none !important;
+	margin-left: -10px;
+	padding-left: 15px;
+	padding-top: 15px;
+}
+
+
+.vintageHero .heroFeature{
+	/*margin-top: 20% !important;*/
+	margin-top: 0 !important;
+}
+.vintageHero .heroFeature .title{
+	/*margin-top: 20% !important;*/
+	margin-top: 25% !important;
+}
+.vintageHeroMobile .title{
+	margin-top: 55% !important;
+	/*top: 15vw !important;*/
+}
+/*FOR VINTAGE SECTION*/ 
+.vintageFeature{
+	width: 98.5%;
+	height: 900px;
+	margin-top: 2.5vw;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+
+	/*border: 1px solid #979797;*/
+
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#info{
+	width:100%;
+	text-align: center;
+	font-family: Campton-Light;
+	font-size: 16px;
+	letter-spacing: 2px;
+	padding-top: 1vw;
+
+}
+.controlLeft{
+	float: left;
+
+	width: 3.5%;
+	height: 650px;
+}
+
+.controlRight{
+	float: right;
+
+	width: 3.5%;
+	height: 650px;
+}
+
+.controlPanel{
+	width: 100%;
+	height: 650px;
+	position: relative;
+}
+
+.controlContainer{
+	font-family: Campton-Light;
+	margin: 0 auto;
+	width: 600px;
+	height: 250px;
+	padding-top: 5vw;
+}
+
+.controlContainer .title{
+	font-family: Campton-Bold;
+	font-size: 20px;
+	width: 100%;
+	height: 25%;
+}
+
+#subtext{
+	font-family: Campton-Light;
+}
+.controlContainer .productSizes{
+	
+	width: 100%;
+	height: 25%;
+	margin-top: 5%;
+}
+
+.controlContainer .productSizes input{
+	width: 25px;
+	height: 25px;
+	background-color: transparent;
+	border: none;
+	border-radius: 12px;
+	-webkit-appearance: none;
+	cursor: default !important;
+}
+.controlContainer .description{
+	
+	width: 100%;
+	height: 25%;
+	padding-bottom: 10vw;
+}
+.controlContainer .cartContainer{
+	width: 100%;
+	height: 25%;
+}
+
+.controlContainer .cartContainer input{
+	background-color: transparent;
+	border: 1px solid #000;
+	border-radius: 4px;
+	padding: 15px 35px 15px 35px;
+	font-family: Campton-Bold;
+}
+
+.controlContainer .sketch{
+	width: 250px;
+}
+
+.footer{
+	margin-top: 25%;
+}
+
+.controlContainer.mobile{
+	padding-top: 2vw;
+}
+
+.sketch{
+	padding-top: 5vw;
+	padding-bottom: 5vw;
+}
+.controlContainer.mobile .productSizes{
+	padding-top: 2vw;
+}
+
+.controlContainer.mobile .productSizes{
+	margin-top: 0;
+}
+
+.controlContainer.mobile .sketch{
+	width: 165px;
+}
+
+.controlContainer.mobile .cartContainer{
+	padding-top: 4vw;
+}
+
+.controlContainer.mobile .cartContainer input{
+	font-family: Campton-Bold;
+}
+
+
+@media only screen and (max-width: 1200px) {
+	.vintageFeature{
+		height: 500px;
+	}
+
+	.controlContainer{
+		padding-top: 4vw;
+	}
+
+	
+}
+@media only screen and (max-width: 540px) {
+	.nonmobile{
+		display: none !important;
+	}
+	.controlRight input{
+		width: 10px;
+		height: 25px;
+		margin-right: 6vw;
+
+		margin-top: 50vw;
+	}
+
+	.controlLeft input{
+		width: 10px;
+		height: 25px;
+		margin-left: 2vw;
+
+		margin-top: 50vw;
+	}
+	.controlContainer{
+		width: 100%;
+
+	}
+	.footer{
+		margin-top: 30vw !important;
+	}
+
+	
+}
+
+@media only screen and (max-width: 440px) {
+	.controlRight input{
+		margin-top: 55vw;
+		margin-right: 10vw;
+	}
+
+	.controlLeft input{
+		margin-top: 55vw;
+	}
+
+	
+}

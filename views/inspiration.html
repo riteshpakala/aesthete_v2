@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<!--      
+     /\  \         /\  \         /\  \         /\  \         /\__\    
+    /::\  \       /::\  \       /::\  \        \:\  \       /:/  /    
+   /:/\:\  \     /:/\:\  \     /:/\ \  \        \:\  \     /:/__/     
+  /::\~\:\  \   /::\~\:\  \   _\:\~\ \  \       /::\  \   /::\  \ ___ 
+ /:/\:\ \:\__\ /:/\:\ \:\__\ /\ \:\ \ \__\     /:/\:\__\ /:/\:\  /\__\
+ \/__\:\/:/  / \:\~\:\ \/__/ \:\ \:\ \/__/    /:/  \/__/ \/__\:\/:/  /
+      \::/  /   \:\ \:\__\    \:\ \:\__\     /:/  /           \::/  / 
+      /:/  /     \:\ \/__/     \:\/:/  /     \/__/            /:/  /  
+     /:/  /       \:\__\        \::/  /                      /:/  /   
+     \/__/         \/__/         \/__/                       \/__/    
+      ___           ___           ___     
+     /\  \         /\  \         /\  \    
+    /::\  \        \:\  \       /::\  \   
+   /:/\:\  \        \:\  \     /:/\:\  \  
+  /::\~\:\  \       /::\  \   /::\~\:\  \ 
+ /:/\:\ \:\__\     /:/\:\__\ /:/\:\ \:\__\
+ \:\~\:\ \/__/    /:/  \/__/ \:\~\:\ \/__/
+  \:\ \:\__\     /:/  /       \:\ \:\__\  
+   \:\ \/__/     \/__/         \:\ \/__/  
+    \:\__\                      \:\__\    Designed By: Dustin Simantob
+     \/__/                       \/__/    Developed By: Ritesh Pakala
+                                          Emotional Support By: Ian Reid-->
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../css/MyFontsWebfontsKit.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/shop/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/shop/navBar.css">
+    <link rel="stylesheet" type="text/css" href="../css/shop/landing.css">
+    <link rel="stylesheet" type="text/css" href="../css/shop/product/grid.css">
+    <link rel="stylesheet" type="text/css" href="../css/shop/product/gallery2.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/hero.css">
+    <link rel="stylesheet" type="text/css" href="../css/inspiration.css">
+
+    <script src="http://sdks.shopifycdn.com/js-buy-sdk/v0/latest/shopify-buy.umd.polyfilled.min.js"></script>
+    <script src="../js/shopLanding.js"></script>
+    <script src="../js/grid.js"></script>
+    <script src="../js/inspiration.js"></script>
+    <script src="../js/gallery.js"></script>
+    <script src="../js/checkout.js"></script>
+    <script src="../js/variants/laceup.js"></script>
+    
+    <title>Aesthete</title>
+</head>
+
+<body>
+
+<div class="headerBar" id="headerBar">
+    <nav role="navigation">
+      <div id="menuToggle">
+        <input type="checkbox" />
+        
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <ul id="menu">
+          <a href="http://aesthete.us/shop"><li>Shop</li></a>
+        </ul>
+      </div>
+    </nav>
+
+    <input class="shop" type="button" value="SHOP" />
+    <input class="inspire" type="button" value="INSPIRATION" />
+
+
+    <input class="logo" id="headerLogo" type="image" src="../images/header/logo.png"/>
+
+
+    <input class="cart" id="shoppingBag" type="image" src="../images/header/shoppingBag.png"/>
+
+   <!--  <input class="login" id="login" type="button" value="LOGIN" />
+    <input class="signup" id="signUp" type="button" value="SIGN UP" /> -->
+
+
+</div>
+
+<div class="navBar">
+    <input class="featuredButton" id = "featuredButton" type="button" value="FEATURED" />
+    <input class="teesButton" id = "teesButton" type="button" value="TEES" />
+    <input class="bootsButton" id="bootsButton" type="button" value="BOOTS" />
+    <input class="coatsButton"  id="coatsButton" type="button" value="COATS" />
+    <!-- <input class="vintageButton" id="vintageButton" type="button" value="VINTAGE" /> -->
+    <input class="accessoriesButton" id="accessoriesButton" type="button" value="ACCESSORIES" />
+</div>
+
+<!-- BLOG -->
+<div class="blogContainer">
+    <div class="blogImage">
+        <img id="blogHeaderImg" src="../images/inspiration/ourstory/1.png"></img>
+        <img style = "visibility: hidden;" src="../images/inspiration/ourstory/1.png"></img>
+    </div>
+    <div class="blogText">
+        <div class="blog" id="blog" style="text-align: center">
+            <p style="font-size: 42px">Coming Soon</p>
+        </div>
+    </div>
+</div>
+
+    
+<!-- END -->
+
+<div class="footer">
+
+    <div class="nav">
+        <input class="membership" type="button" value="Membership" />
+        <input class="membership" type="button" value="Terms Of Use" />
+        <input class="membership" type="button" value="Privacy Policy" />
+        <input class="membership" type="button" value="Return Policy" />
+        <input class="membership" type="button" value="Contact Us" />
+    </div>
+
+    <div class="social">
+        <input class="instaIcon" type="image" src="../images/footer/social/instaIcon.png"/>
+        <input class="mailIcon" type="image" src="../images/footer/social/mailIcon.png"/>
+        <input class="twitterIcon" type="image" src="../images/footer/social/twitterIcon.png"/>
+        <input class="faceBookIcon" type="image" src="../images/footer/social/facebookIcon.png"/>
+    </div>
+
+</div>
+
+</body>
+</html>

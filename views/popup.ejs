@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<!--      
+      _/_/    
+   _/    _/          Designed by: Dustin Simantob
+  _/_/_/_/   _/  
+ _/    _/            Developed by: Ritesh Pakala
+_/    _/   
+
+-->
+
+<html lang="en">
+<head>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCLD3MQ');</script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
+    <meta property="og:image" content="/images/popup/1.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logos/favicon.ico">
+  
+    <link rel="stylesheet" type="text/css" href="../css/MyFontsWebfontsKit.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/shop/landing.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/hero.css">
+    <link rel="stylesheet" type="text/css" href="../css/inspiration.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/popup.css">
+    
+    <title>Aesthete | Popup</title>
+
+    <script>
+      $(document).ready(function() {
+        $("#directionsCTA1, #directionsCTA2").click(function() {
+          window.open("https://www.google.com/maps/place/1749+Union+St,+San+Francisco,+CA+94123/data=!4m2!3m1!1s0x808580c335ad0e1b:0x7e27f9fce10feb27?sa=X&ved=0ahUKEwjM_Ze39L_XAhUE7mMKHUzfCR4Q8gEIJTAA");
+        });
+
+        $("div.downArrowHeroContainer").click(function(){
+          if($(window).width() < 770){
+          $('html,body').animate({
+            scrollTop: $("#popupFeature2").offset().top - 51},
+            'slow');
+        }else{
+          $('html,body').animate({
+            scrollTop: $("#popupFeature3").offset().top - 51},
+            'slow');
+        }
+        });
+
+
+        var everythingLoaded = setInterval(function() {
+                 if (/loaded|complete/.test(document.readyState)) {
+                    clearInterval(everythingLoaded);
+                      
+                    if(collision($("#dynamicallyMoveRight"), $("#baseLeft"))){
+                // $("#dynamicallyMoveRight").css({"right":(-1*($("#dynamicallyMoveRight").offset().left+0.01))})
+              }
+                      
+                  }
+            }, 10);
+
+
+            setInterval(function(){
+                $("div.resizeToScreenFirst").css({"height":($(window).height() - $("div.resizeToScreenFirst").offset().top)});
+                
+                  $("div.resizeToScreen").css({"height":($(window).height() - 50)});
+
+                    if(collision($("#dynamicallyMoveRight"), $("#baseLeft"))){
+                // $("#dynamicallyMoveRight").css({"right":(-1*($("#dynamicallyMoveRight").offset().left+0.01))})
+                // $("#dynamicallyMoveRight").css({"left":$("#baseLeft").width()+100});
+              }
+            
+
+              }, 100);
+              
+            $( window ).resize(function() {
+              // if(collision($("#dynamicallyMoveRight"), $("#baseLeft"))){
+              //   // $("#dynamicallyMoveRight").css({"right":(-1*($("#dynamicallyMoveRight").offset().left+0.01))})
+              //   $("#dynamicallyMoveRight").css({"left":$("#baseLeft").width()+100});
+              // }else{
+              // }
+            });
+
+            function collision($div1, $div2) {
+              var x1 = $div1.offset().left;
+              var y1 = $div1.offset().top;
+              var h1 = $div1.outerHeight(true);
+              var w1 = $div1.outerWidth(true);
+              var b1 = y1 + h1;
+              var r1 = x1 + w1;
+              var x2 = $div2.offset().left;
+              var y2 = $div2.offset().top;
+              var h2 = $div2.outerHeight(true);
+              var w2 = $div2.outerWidth(true);
+              var b2 = y2 + h2;
+              var r2 = x2 + w2;
+
+              if (b1 < y2 || y1 > b2 || r1 < x2 || x1 > r2) return false;
+              return true;
+            }
+
+        
+      });
+    </script>
+</head>
+
+<body>
+
+<% include newsletter %>
+
+<% include header %>
+
+<% include navbar %>
+
+<div class="popupHero resizeToScreenFirst">
+  <div class="titleContainer">
+    POP UP
+  </div>
+
+  <div class="subtext1Container">
+    RSVP below for a night of wine tasting at our holiday event, hand-drawn contour sketches included with the first 20 purchases.
+  </div>
+
+  <div class="subtext2Container">
+    NOVEMBER AND DECEMBER ONLY
+  </div>
+
+  <div class="subtext3Container">
+    SAN FRANCISCO, CA.
+  </div>
+
+  <img class="heroImageRight" src="../images/popup/1.png"/>
+
+  <div class="downArrowHeroContainer">
+    <img class="downArrowHero" src="../images/popup/downArrow.png"/>
+  </div>
+</div>
+
+
+<div class="popupHero desktopHide short" style ="margin-top: 10px" id="popupFeature2">
+  <div class="titleContainerCustom2">
+    NOVEMBER AND DECEMBER ONLY
+  </div>
+  <div class="subtext1ContainerCustom2">
+    RSVP below for a night of wine tasting at our holiday event, hand-drawn contour sketches included with the first 20 purchases.
+  </div>
+</div>
+
+<div class="popupHero darkGray resizeToScreen" style ="margin-top: 10px" id="popupFeature3">
+  <div class="titleCenterContainer">
+    1749 UNION ST. SAN FRANCISCO, CA.
+  </div>
+
+  <div class="titleCenterCTAContainer" id="directionsCTA1">
+    DIRECTIONS >
+  </div>
+
+
+  <img class="heroImageLeft bringUp mobileHide" id="baseLeft" src="../images/popup/2.png"/>
+
+  <img class="heroImageRight bottomRight bringDown pushRight" id="dynamicallyMoveRight" src="../images/popup/2.1.png"/>
+</div>
+
+<div class="popupHero salmon extraLong" style ="margin-top: 10px">
+  <div class="titleCenterContainerCustom1">
+    POP UP
+  </div>
+
+  <div class="subtext1ContainerCustom1">
+    1749 Union St. San Francisco, CA.
+  </div>
+  <div class="subtext2ContainerCustom1">
+    STORE HOURS:
+  </div>
+  <div class="subtext3ContainerCustom1">
+    11:00AM - 7:00PM DAILY
+  </div>
+
+  <div class="subtext4ContainerCustom1" id="directionsCTA2">
+    DIRECTIONS >
+  </div>
+
+
+<img class="heroImageRight stickToBottom fixHeight bottomRight" src="../images/popup/3.png"/>
+</div>
+    
+<div class="popupHero short center" style ="margin-top: 10px" id="popupFeature2">
+  <div class="titleContainerCustom2">
+    Listen in for our next experience…
+  </div>
+  <div class="subtext1ContainerCustom2 up">
+    <span style="font-family: 'Campton-Bold'">Sign up for our periodic Newsletter…</span></br></br>
+    Stay in touch with us for news on new product releases, pre-order items, special access products and promotional events.
+  </div>
+
+
+  <div class ="newsletterInputPopup">
+<div class="containerForInputsPopup">
+<input type="text" placeholder="EMAIL ADDRESS" id="newsletterEmailPopup"/>
+<input type="button" id="newsletterSubmitPopup" value="SUBMIT"/>
+</div>
+</div>
+
+</div>
+<!-- END -->
+
+</body>
+</html>

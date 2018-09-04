@@ -1,0 +1,502 @@
+@font-face {
+    font-family: Campton-Light;
+    src: url("fonts/Campton-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Campton-Bold;
+    src: url("fonts/Campton-Bold.otf") format("opentype");
+}
+
+body{
+	letter-spacing: 2px
+}
+
+
+.eds-btn--fill:after{
+	background-color: #000 !important;
+}
+
+.popupHero{
+	width: 100vw;
+	height: 620px;
+	background-color: #F7F7F7;
+
+	position: relative;
+
+	overflow: hidden;
+
+}
+
+.popupHero div{
+	z-index: 13;
+}
+
+.short{
+
+	height: 520px !important;
+}
+
+.extraLong{
+
+	height: 1220px !important;
+}
+.salmon{
+	background-color: #F1D7BE;
+}
+
+.stickToBottom{
+	bottom: 0;
+}
+
+.titleContainerCustom2{
+	top: 25%;
+
+	font-family: Campton-Bold;
+
+	font-size: 15px;
+	width: 100%;
+	text-align: center;
+
+	position: absolute;
+}
+
+.subtext1ContainerCustom2{
+	top: 50%;
+
+	font-family: Campton-Light;
+
+	font-size: 15px;
+	text-align: center;
+
+	position: absolute;
+	padding: 10px 10px 10px 10px;
+
+}
+
+.up{
+	width: 98vw !important;
+	top: 40% !important;
+	right: 0 !important;
+	left: 0 !important;
+}
+
+.fullWidth{
+	width: 100%;
+}
+
+.titleContainer{
+	position: absolute;
+	top: 12%;
+	left: 7%;
+	width: 400px;
+	height: 50px;
+	font-size: 35px;
+	font-family: Campton-Light;
+}
+
+.subtext1Container{
+	position: absolute;
+	top: 25%;
+	left: 7%;
+	width: 420px;
+	height: 50px;
+	font-size: 12px;
+	font-family: Campton-Bold;
+}
+
+.center{
+	text-align: center;
+}
+
+.subtext2Container{
+	position: absolute;
+	top: 50%;
+	left: 7%;
+	width: 300px;
+	height: 50px;
+	font-size: 9px;
+	letter-spacing: 3.7px;
+	font-family: Campton-Light;
+}
+
+.subtext3Container{
+	position: absolute;
+	bottom: 12%;
+	left: 7%;
+	width: 300px;
+	height: 50px;
+	font-size: 14px;
+	letter-spacing: 3.7px;
+	font-family: Campton-Light;
+}
+
+.subtextCTACenter{
+
+}
+
+.heroImageRight{
+	
+	float: right !important;
+	height: 100% !important;
+	width: auto !important;
+}
+.heroImageLeft{
+	
+	position: absolute;
+	left: 0;
+	height: 100% !important;
+	width: auto !important;
+}
+
+.fixWidth1{
+	width: 100px;
+}
+
+.fixWidth2{
+
+}
+.pushRight{
+	right: -100px;
+}
+.bottomRight{
+	position: absolute;
+	right: 0;
+
+}
+
+.fixHeight{
+	height: 520px !important;
+}
+
+.bringUp{
+	z-index: 12;
+}
+
+.bringDown{
+	z-index: 1;
+}
+
+.darkGray{
+	background-color: rgba(98, 98, 98, 1.0);
+}
+
+.downArrowHeroContainer{
+	position: absolute;
+	width: 100%;
+	bottom: 2%;
+	text-align: center;
+}
+.downArrowHero{
+	width: 25px;
+	height: auto;
+}
+
+.titleCenterContainer{
+	top: 50%;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	font-family: Campton-Light;
+	font-size: 21px;
+	letter-spacing: 6px;
+	color: #FFF;
+}
+
+.titleCenterCTAContainer{
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	bottom: 5%;
+
+	font-size: 10px;
+	letter-spacing: 6px;
+
+	font-family: Campton-Light;
+	color: #FFF;
+}
+
+.titleCenterContainerCustom1{
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	top: 5%;
+
+	font-size: 75px;
+	letter-spacing: 6px;
+
+	font-family: Campton-Bold;
+	color: #FFF;
+}
+
+.subtext1ContainerCustom1{
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	top: 20%;
+
+	font-size: 60px;
+	letter-spacing: 6px;
+
+	font-family: Campton-Light;
+	color: #FFF;
+}
+
+.subtext2ContainerCustom1{
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	top: 35%;
+
+	font-size: 41px;
+	letter-spacing: 6px;
+
+	font-family: Campton-Light;
+	color: #FFF;
+}
+
+.subtext3ContainerCustom1{
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	top: 45%;
+
+	font-size: 35px;
+	letter-spacing: 6px;
+
+	font-family: Campton-Bold;
+	color: #FFF;
+
+}
+
+.subtext4ContainerCustom1{
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+
+	font-size: 14px;
+	letter-spacing: 6px;
+
+	font-family: Campton-Light;
+	color: #FFF;
+}
+
+#directionsCTA1, #directionsCTA2, .downArrowHeroContainer{
+	cursor: pointer;
+}
+
+.desktopHide{
+	display: none;
+}
+
+.newsletterInputPopup{
+	width: 300px;
+	height: 100%;
+	top: 65%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	
+}
+
+.newsletterInputPopup input[type=text]{
+	border: none;
+	padding: 8px 45px 5px 15px;
+	width: 110px;
+	/*top: 50%;/*/
+	/*margin-top: 25px;*/
+	background-color: transparent;
+	font-family: Campton-Bold;
+	font-size: 8px;
+	letter-spacing: 2px;
+}
+
+.newsletterInputPopup input[type=button]{
+	border: none;
+	border-radius: 0;
+	border-left: 1px solid #979797;
+	background-color: transparent;
+	padding-left: 2vw;
+	padding-right: 0px;
+	padding-top: 8px;
+	-webkit-appearance: none;
+	font-family: Campton-Bold;
+	letter-spacing: 2px;
+	/*top: 50%;/*/
+}
+.containerForInputsPopup{
+	/*width: 100%;*/
+	padding: 5px 10px 5px 10px;
+	/*background-color: blue;*/
+	margin-top: 18px;
+	border-radius: 6px;
+	/*border: 1.5px solid #000;*/
+	background-color: #FFF;
+}
+.newsletterContainer{
+	
+	background-color: #000;
+	text-align: center;
+}
+
+
+@media only screen and (max-width: 2296px) {
+.pushRight{
+	left: 900px !important;
+}
+@media only screen and (max-width: 1902px) {
+
+}
+
+@media only screen and (max-width: 1654px) {
+.fixHeight{
+	width: 1660px !important;
+	height: auto !important;
+}
+
+.extraLong{
+
+	height: 2384px !important;
+}
+
+.subtext2ContainerCustom1{
+	top: 35%;
+}
+}
+
+
+@media only screen and (max-width: 1106px) {
+.heroImageFull{
+	height: 100% !important;
+	width: auto !important;
+}
+
+@media only screen and (max-width: 769px) {
+.heroImageFull{
+	height: 100% !important;
+	width: auto !important;
+}
+
+.desktopHide{
+	display: block;
+}
+
+.titleContainer{
+
+	width: 100%;
+	top: 50%;
+	text-align: center;
+	left: 0;
+	font-family: Campton-Bold;
+	font-size: 60px;
+}
+.subtext1Container{
+	display: none;
+
+}
+.subtext2Container{
+	display: none;
+
+}
+.subtext3Container{
+	display: none;
+
+}
+.subtext4Container{
+	display: none;
+
+}
+.fixHeight{
+	-moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+.extraLong{
+
+	height: 1484px !important;
+}
+
+.fixHeight{
+
+	height: 645px !important;
+	width: auto !important;
+}
+
+.bottomRight{
+	left: 0 !important;
+}
+
+.subtext1ContainerCustom1{
+	font-size: 32px;
+}
+
+.subtext2ContainerCustom1{
+	font-size: 25px;
+}
+
+.subtext3ContainerCustom1{
+	font-size: 30px;
+}
+
+}
+
+@media only screen and (max-width: 557px) {
+.subtext4ContainerCustom1{
+	top: 55%;
+}
+}
+
+@media only screen and (max-width: 415px) {
+
+	.subtext1ContainerCustom2{
+
+	}
+	.subtext1ContainerCustom1{
+
+	padding-left: 10px;
+	padding-right: 20px !important;
+	font-size: 30px;
+}
+
+.subtext2ContainerCustom1{
+	font-size: 30px;
+}
+
+.subtext3ContainerCustom1{{
+	font-size: 20px;
+}
+
+.subtext3ContainerCustom1{{
+	font-size: 18px;
+}
+
+
+.heroImageFull{
+	height: 100% !important;
+	width: auto !important;
+}
+
+.mobileHide{
+	display: none !important;
+}
+
+.pushRight{
+	float: left !important;
+	left: 0 !important;
+}
+
+.fixHeight{
+	width: 891px !important;
+	height: auto !important;
+	left: -187px !important;
+	position: absolute !important;
+
+
+}
+}

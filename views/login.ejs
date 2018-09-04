@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--      
+      _/_/    
+   _/    _/          Designed by: Dustin Simantob
+  _/_/_/_/   _/  
+ _/    _/            Developed by: Ritesh Pakala
+_/    _/   
+
+-->
+<html lang="en">
+<head>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCLD3MQ');</script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
+    <meta property="og:image" content="/images/logos/preview.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logos/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/css/MyFontsWebfontsKit.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/signup.css">
+
+    <script src="/js/signup.js" /></script>
+    <script src="/js/shopLanding.js" /></script>
+
+    <title>Aesthete | Login</title>
+</head>
+
+<body>
+
+<% include newsletter %>
+
+<% include header %>
+
+<% include navbar %>
+
+<% include cartTest %>
+
+<div class="memberPortal loginPortal" id="landingMemberPortal">
+    <div class="memberFeature login">
+        <p class="title">MEMBER LOGIN</p>
+        <p class="subtext">Access your account here: </p>
+        <p id="loginDisclaimer" class="subtext2" style="display: none;"></p>
+
+        <form class="signupFormMobileLogin" method="POST">
+            <input type="text" id="emailMobile" placeholder="Email"> </input>
+
+            <input type="password" id="passwordMobile" placeholder="Password"> </input>
+            <input class ="loginAccount" id="loginAccountMobile" type="button" value="Login"></input>
+            
+        </form>
+
+        <form class="signupForm" id="loginForm" method="POST">
+            <input type="text" id="email" placeholder="Email"> </input>
+
+            <input type="password" id="password" placeholder="Password"> </input>
+            <input class ="loginAccount" id="loginAccount" type="button" onclick="return false;" value="Login"></input>
+            
+        </form>
+
+        <div class="buttons">
+
+        <input class ="signUpLogin" id="signup" type="button" value="SIGN UP"/> &nbsp;&nbsp;&nbsp;
+
+        <!-- | <input class ="forgotLogin" type="button" value="FORGOT PASSWORD"/> -->
+        </div>
+    </div>
+    
+    <div class="img">
+    <img src="../images/login/1.png"/>
+    </div>
+
+    <div class="imgMobile">
+    <img src="../images/login/mobile/1.png"/>
+    </div>
+</div>
+
+
+</body>
+</html>

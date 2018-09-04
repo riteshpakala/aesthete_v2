@@ -1,0 +1,286 @@
+
+@font-face {
+    font-family: Campton-Medium;
+    src: url("/fonts/Campton-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Campton-Bold;
+    src: url("/fonts/Campton-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Campton-SemiBold;
+    src: url("/fonts/Campton-SemiBold.otf") format("opentype");
+}
+
+#snow{
+	background: none;
+	font-family: Androgyne;
+	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:1;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}	
+
+
+.discountBanner{
+	width: 100%;
+	height: 40px;
+
+	background-color: #000;
+
+	position: fixed;
+
+	bottom: 0;
+	left: 0;
+
+	z-index: 12;
+
+	text-align: center;
+
+
+	transition: 1.2s;
+	cursor: pointer;
+}
+
+.discountBanner{
+	font-family: "Campton-Bold"
+}
+
+.dicounterBanner p{
+	text-align: center !important;
+}
+
+.discountPreText{
+	color: #FFF;
+	font-family: "Campton-Bold";
+	font-size: 14px;
+	position: absolute;
+	margin-top: 0px;
+	top: 13px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+
+    letter-spacing: 7px;
+
+
+
+
+}
+
+.discountTitle{
+	color: #FFF;
+	font-family: "Campton-SemiBold" !important;
+	font-size: 13px;
+	position: absolute;
+	margin-top: 0px;
+	top: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+    letter-spacing: 16px;
+
+
+    opacity: 0;
+
+    transition: 0.6s;
+
+}
+
+.discountMainText{
+	color: #FFF;
+	font-family: "Campton-SemiBold";
+	font-size: 215px;
+	position: absolute;
+	margin-top: 0px;
+	top: 30%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+
+    opacity: 0;
+
+    transition: 0.6s;
+
+}
+.discountSubText{
+	color: #FFF;
+	font-family: "Campton-SemiBold";
+	font-size: 14px;
+	position: absolute;
+	margin-top: 0px;
+	top: 60%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+
+    opacity: 0;
+
+    width: 70%;
+
+    transition: 0.6s;
+    letter-spacing: 7px
+
+}
+.discountSubText2{
+	color: #FFF;
+	font-family: "Campton-SemiBold";
+	font-size: 25px;
+	position: absolute;
+	margin-top: 0px;
+	top: 0;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+
+    opacity: 0;
+
+    transition: 0.6s;
+
+}
+#discountShopNow{
+	top: 50%;
+}
+#discountShopNow input{
+	background-color: transparent !important;
+	color: #FFF;
+	border: none !important;
+	font-family: "Campton-Bold";
+	font-size: 25px;
+	position: absolute;
+	margin-top: 0px;
+	top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+
+    opacity: 0;
+    transition: 0.6s;
+}
+.discountBannerHoverAction{
+	width: 100vw;
+	height: 100%;
+	left: 0%;
+	margin-left: 0%;
+
+	transition: width, height 1.2s;
+}
+.discountMainTextActive{
+	opacity: 1.0;
+	transition: opacity 1.2s;
+}
+
+.discountPreTextActive{
+	opacity: 0.0;
+	transition: opacity 1.2s;
+}
+
+.mobile{
+	display: none;
+}
+
+@media only screen and (max-width: 800px) {
+.discountMainText{
+	font-size: 165px;
+}
+
+	}
+@media only screen and (max-width: 751px) {
+
+.discountTitle{
+	/*top: 80px;*/
+	/*font-size: 25px;*/
+
+}
+.discountMainText{
+	/*font-size: 165px;*/
+	top: 20% !important;
+}
+
+.discountSubText{
+	top: 50%;
+}
+
+.hideText{
+	display:none;
+}
+/*.discountSubText{
+	top: auto;
+	bottom: 15px;
+	font-size: 9px;
+}*/
+
+}
+
+@media only screen and (max-width: 960px) {
+.desktop{
+	display: none;
+}
+
+.mobile{
+	display: block;
+}
+
+}
+
+@media only screen and (max-width: 579px) {
+
+.discountMainText{
+	font-size: 90px;
+}
+
+}
+@media only screen and (max-width: 419px) {
+
+.discountMainText{
+	/*font-size: 130px;*/
+
+	top: 30% !important;
+}
+.discountSubText{
+	font-size: 11px;
+	width: 85%;
+	top: 50%;
+}
+
+.discountTitle{
+	font-size: 9px;
+	letter-spacing: 10px;
+}
+
+}

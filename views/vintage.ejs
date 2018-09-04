@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--      
+      _/_/    
+   _/    _/          Designed by: Dustin Simantob
+  _/_/_/_/   _/  
+ _/    _/            Developed by: Ritesh Pakala
+_/    _/   
+
+-->
+<html lang="en">
+<head>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCLD3MQ');</script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
+    <meta property="og:image" content="/images/logos/preview.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logos/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../css/MyFontsWebfontsKit.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../css/shop/landing.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/hero.css">
+    <link rel="stylesheet" type="text/css" href="../css/signup.css">
+
+
+    <script src="/js/jquery.scrollify.js"></script>
+    <script src="/js/shopLanding.js" /></script>
+    <script src="/js/vintageFeature.js" /></script>
+    <script src="/js/signup.js" /></script>
+    
+    <title>Aesthete | Curated Vintage for Men and Women</title>
+</head>
+
+<body>
+
+<% include newsletter %>
+
+<% include header %>
+
+<% include navbar %>
+
+<% include cartTest %>
+
+<% if (!locals.loggedIn) { %>
+
+<div class="overlay" id="overlay">
+<div class="overlayForm" id="overlayForm">
+<p class="text">
+
+<span class="header">CREATE ACCOUNT</span>
+</br>
+</br>
+</br>
+</br>
+</br>
+<span class="subtext1">Sign up to gain special access to the vintage collection in addition to free shipping and returns on all orders.</span>
+</br>
+</br>
+
+<span class="subtext2" id="secondSubtext">With an account you’ll be able to access all of our basic line of products. If you’d like to gain access to editorial pieces, single item production pieces, and exclusive capsules.</br> Please sign up for an account below.</span>
+
+</br>
+<p id="passwordDisclaimer" class="subtext2" style="display: none;">Passwords must be 6 or more characters long.</p>
+</p>
+<div class="memberFeature" id="signUpMobileMain">
+
+            <form class="signupFormMobile" id = "signupFormMobile">
+                <input type="text" id="firstNameMobile" placeholder="First Name"> </input></br>
+
+                <input type="text" id="lastNameMobile" placeholder="Last Name"> </input></br>
+             
+                <input type="text" id="emailMobile" placeholder="Email Address"> </input></br>
+
+                <input type="password" id="passwordMobile" placeholder="Password"> </input></br>
+
+                <input type="password" id="confirmPasswordMobile" placeholder="Confirm Password"> </input></br>
+
+              
+            </form>
+
+
+                
+            <input class ="createAccountMobile inverted" id="createAccountMobile" type="button" value="CREATE ACCOUNT"/>
+            </br>
+
+            <input class ="loginAccountMobileVintageFeature" id="loginAccountMobileVintageFeature" type="button" value="LOGIN"/>
+            </br>
+            </br>
+            </br>
+            </br>
+            <form class="signupForm">
+                <input type="text" id="firstName" placeholder="First Name"> </input>
+
+                <input type="text" id="lastName" placeholder="Last Name"> </input>
+             
+                <input type="text" id="email" placeholder="Email Address"> </input>
+
+                <input type="password" id="password" placeholder="Password"> </input>
+
+                <input type="password" id="confirmPassword" placeholder="Confirm Password"> </input>
+                </br>
+                <input class ="createAccount inverted" id="createAccount" type="button" value="CREATE ACCOUNT"/>
+                </br>
+                <input class ="loginAccountVintageFeature" id="loginAccountVintageFeature" type="button" value="LOGIN"/>
+                </br>
+            </form>
+        </div>
+
+<!-- <input class ="createAccount" id="createAccount" type="button" value="Create Account"/>
+ --></div>
+</div>
+<% } %>
+
+
+<div class="heroText vintage desktop" data-section-name="1">
+
+    <div class="heroTextContainer">
+        <p class="title">VINTAGE CAPSULE COLLECTION</p>
+        <p class="subtext">We sorted through thousands of vintage garments and have brought you only what we feel were the absolute best. Our aim is to display the imperfections and distressings that can only be achieved in an authentic way with time.</p>
+
+        <!-- <p class="subtext2">No two pieces are alike, you will receive the exact garment that you purchase. Size and consistency varries from garment to garment by nature. </p> -->
+    </div>
+
+    <img id="vintageFeaturedHeader" class ="image1" src="../images/shop/vintage/1.png" />
+</div>
+
+<div class="hero right desktop" id="vintageFeature2" data-section-name="2">
+    <div class="heroFeature">
+        <p class="title">Vintage Tees</p>
+        <p class="subtext">Authentic vintage tees dating pre-1980’s.</br></br>From thousands of tees we’ve hand</br>selected and curated only the best 120.</p>
+        <p class="closing1"> <span class="closing2">Pick the exact Tee you want. </span></p>
+
+
+        <input id="vintageFeature1CTA" class="heroCTA" type="button" value="MORE" />
+
+    </div>
+
+    <img class ="image1" src="../images/shop/vintage/2.png" />
+    <div class="featureOverlay"></div>
+</div>
+
+<div class="hero right mobile" id="vintageFeatureHeaderMobile" >
+   
+
+    <img class ="image1" src="../images/shop/vintage/mobile/1.png" />
+</div>
+
+<div class="hero left desktop" id="lastVintageFeature" data-section-name="3">
+    <div class="heroFeature">
+        <p class="title">Vintage Parka</p>
+        <p class="subtext">Authentic vintage jackets</br>dating pre-1980’s</br></br>From hundred of jackets</br>we’ve hand selected and</br>curated only the best 14.</p>
+        <p class="closing1"> <span class="closing2">Pick the exact jacket you want.</span></p>
+
+
+        <input id="vintageFeature2CTA" class="heroCTA" type="button" value="MORE" />
+
+    </div>
+
+    <img class ="image1" src="../images/shop/vintage/3.png" />
+    <div class="featureOverlay"></div>
+</div>
+
+<div class="hero right mobile" id="vintageFeature2Mobile" >
+   
+
+    <a href="/shop/vintage/tees"><img class ="image1" src="../images/shop/vintage/mobile/2.png" /></a>
+    <div class="featureOverlay"></div>
+</div>
+
+<div class="hero left mobile" id="lastVintageFeatureMobile">
+  
+
+    
+        <a href="/shop/product/vintage/parka"><img class ="image1" src="../images/shop/vintage/mobile/3.png" /></a>
+    <div class="featureOverlay"></div>
+</div>
+
+<% if (locals.loggedIn) { %>
+
+<% include footer %>
+
+<% } %>
+
+</body>
+</html>

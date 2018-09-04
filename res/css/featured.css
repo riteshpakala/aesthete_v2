@@ -1,0 +1,627 @@
+@font-face {
+    font-family: Campton-Medium;
+    src: url("/css/fonts/campton-medium.otf") format("opentype");
+}
+@font-face {
+    font-family: Campton-Bold;
+    src: url("/css/fonts/Campton-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: Campton-ExtraBold;
+    src: url("/css/fonts/campton-extrabold.otf") format("opentype");
+}
+
+
+body {
+    opacity: 1;
+    transition: 1.2s opacity;
+}
+
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+p{
+	color: #3E3E3E;
+}
+.sectionBar{
+	height: 50px;
+	width: 100%;
+	background-color: black;
+	overflow: hidden;
+}
+
+.sectionBar .label{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-family: "Campton-Bold";
+	letter-spacing: 4px;
+	color: #FFF;
+	font-size: 16px;
+	padding-top: 2px;
+}
+.featureFull, .featureFullFit, .featureFullFirst{
+	background-color: #F7F7F7;
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+
+	position: relative;
+
+	overflow: hidden;
+}
+
+.alignLeft{
+	text-align: left !important;
+}
+
+.keepTightToText .featureButtons{
+	/*height: 20%;*/
+	width: 100%;
+	text-align: center;
+}
+
+.threeInfoCell .featureButtons{
+	/*height: 20%;*/
+	width: 100%;
+	text-align: center;
+}
+
+.boots .featureButtons{
+	/*height: 20%;*/
+	width: 60%;
+	float: left;
+}
+
+.pushBootsUp{
+	bottom: 10% !important;
+}
+
+.keepTightToText .featureButtons input{
+	display: inline-block;
+	background-color: transparent;
+	border: none;
+	font-family: 'Campton-Medium';
+	font-size: 12px;
+	letter-spacing: 4px;
+}
+
+.featureMessage .featureButtons input{
+	display: inline-block;
+	background-color: transparent;
+	border: none;
+	font-family: 'Campton-Medium';
+	font-size: 12px;
+	letter-spacing: 4px;
+	margin-left: 70px;
+}
+
+.threeInfoCell .featureButtons input{
+	display: inline-block;
+	background-color: transparent;
+	border: none;
+	font-family: 'Campton-Medium';
+	font-size: 12px;
+	letter-spacing: 4px;
+	/*margin-left: 70px;*/
+}
+
+.featureContent .featureButtons input{
+	display: inline-block;
+	background-color: transparent;
+	border: none;
+	font-family: 'Campton-Medium';
+	font-size: 12px;
+	letter-spacing: 4px;
+	/*margin-left: 70px;*/
+}
+
+.featureContent .featureButtons{
+	text-align: left;
+	margin-left: 10%;
+	/*margin-left: 70px;*/
+}
+
+.featureButtons img {
+	display: inline-block;
+	height: 12px;
+	width: auto;
+}
+
+.featureMessage{
+	background-color: #FFF;
+	width: 100%;
+	height: 250px;
+}
+
+.featureMessage .title{
+	width: 30%;
+	height: 100%;
+	float: left;
+}
+
+.featureMessage .title p{
+	width: 100%;
+	text-align: center;
+	font-size: 19px;
+	font-family: "Campton-Medium";
+	letter-spacing: 12px;
+	padding-top: 50px;
+	padding-left: 50px;
+}
+
+.featureMessage .message{
+	width: 70%;
+	height: 100%;
+	float: right;
+}
+.featureMessage .message p{
+	width: 100%;
+	height: 50%;
+	float: left;
+	padding-top: 50px;
+	padding-left: 75px;
+
+	font-family: "Campton-Medium";
+
+	letter-spacing: 4px;
+	font-size: 16px;
+}
+
+.gradient{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f7f7f7+100 */
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f7f7f7 30%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f7f7f7 30%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ffffff 0%,#f7f7f7 30%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7f7f7',GradientType=0 ); /* IE6-9 */
+
+}
+
+.gradientBoots{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f7f7f7+100 */
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f7f7f7 20%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f7f7f7 20%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ffffff 0%,#f7f7f7 20%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7f7f7',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+#landingDownArrow{
+	position: fixed;
+	width: 34px;
+	height: auto;
+	bottom: 10px;
+}
+
+.pushedFromTheRight17{
+	position: absolute;
+	height: 62%;
+	width: auto;
+	bottom: 0;
+	right: 17%;
+}
+
+.pushedFromTheLeft17{
+	position: absolute;
+	height: 62%;
+	width: auto;
+	bottom: 0;
+	left: 17%;
+}
+
+
+.centeredImg{
+	position: absolute;
+	height: 62%;
+	width: auto;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto auto;
+}
+
+.centeredImgFull{
+	position: absolute;
+	height: auto;
+	width: auto;
+	bottom: 0;
+	left: 0;
+	/*right: 0;*/
+	/*margin: auto auto;*/
+
+	transition: all 0.8s;
+		-moz-transition: all 0.8s;
+		-webkit-transition: all 0.8s;
+		-ms-transition: all 0.8s;
+		-o-transition: all 0.8s;
+}
+
+.centeredImgTee{
+	/*width: auto;*/
+
+	width:100%;
+	bottom: -45%;
+}
+
+.bottomLeft{
+	position: absolute;
+	height: 62%;
+	width: auto;
+	bottom: 0;
+	left: 0;
+
+}
+
+.threeInfoCell{
+	width: 100%;
+	height: 80%;
+
+	position: absolute;
+
+	bottom: 25px;
+
+	background-color: #F7F7F7;
+
+	transition: all 0.8s;
+		-moz-transition: all 0.8s;
+		-webkit-transition: all 0.8s;
+		-ms-transition: all 0.8s;
+		-o-transition: all 0.8s;
+}
+
+.threeInfoCell tr{
+	width: 100%;
+	height: 100%;
+
+	transition: all 0.8s;
+		-moz-transition: all 0.8s;
+		-webkit-transition: all 0.8s;
+		-ms-transition: all 0.8s;
+		-o-transition: all 0.8s;
+}
+
+.threeInfoCell tr td{
+	width: 33%;
+	height: 100%;
+	text-align: center;
+
+	transition: all 0.8s;
+		-moz-transition: all 0.8s;
+		-webkit-transition: all 0.8s;
+		-ms-transition: all 0.8s;
+		-o-transition: all 0.8s;
+}
+
+.threeInfoCell.boots tr td p {
+	width: 50%;
+	margin-left: 45%;
+	font-family: "Campton-Medium";
+	font-size: 17px;
+
+	letter-spacing: 1px;
+
+	transition: all 1.2s ease;
+	-moz-transition: all 1.2s ease;
+	-webkit-transition: all 1.2s ease;
+	-ms-transition: all 1.2s ease;
+	-o-transition: all 1.2s ease;
+}
+
+.threeInfoCell tr td p {
+	width: 100%;
+	text-align: center;
+	font-family: "Campton-Medium";
+	font-size: 17px;
+
+	letter-spacing: 1px;
+
+	transition: all 1.2s ease;
+	-moz-transition: all 1.2s ease;
+	-webkit-transition: all 1.2s ease;
+	-ms-transition: all 1.2s ease;
+	-o-transition: all 1.2s ease;
+}
+
+.coats{
+	width: 65%;
+	margin-left: 17.5%;
+
+	transition: all 0.8s;
+		-moz-transition: all 0.8s;
+		-webkit-transition: all 0.8s;
+		-ms-transition: all 0.8s;
+		-o-transition: all 0.8s;
+}
+
+.tees{
+	width: 100%;
+
+	transition: all 0.8s;
+		-moz-transition: all 0.8s;
+		-webkit-transition: all 0.8s;
+		-ms-transition: all 0.8s;
+		-o-transition: all 0.8s;
+}
+
+.vintage{
+	width: 90%;
+	margin-left: 2%;
+
+	transition: all 0.8s;
+		-moz-transition: all 0.8s;
+		-webkit-transition: all 0.8s;
+		-ms-transition: all 0.8s;
+		-o-transition: all 0.8s;
+}
+
+.boots{
+	width: 65%;
+	margin-left: 12.5%;
+
+	transition: all 0.8s;
+		-moz-transition: all 0.8s;
+		-webkit-transition: all 0.8s;
+		-ms-transition: all 0.8s;
+		-o-transition: all 0.8s;
+}
+
+.threeInfoCell.coats .tableImg{
+	width: auto;
+	height: 300px;
+
+}
+
+.threeInfoCell.tees .tableImg{
+	width: auto;
+	height: 270px;
+
+}
+
+.threeInfoCell.vintage .tableImg{
+	width: auto;
+	height: 200px;
+
+}
+
+.threeInfoCell.boots .tableImg{
+	width: 100%;
+	height: auto;
+
+}
+
+.tableOfItems{
+	width: 100%;
+	background-color: #F7F7F7;
+	height: 600px;
+	position: relative;
+}
+
+.tabletShow{
+	display: none;
+}
+
+.tableButtons{
+	float: right !important;
+}
+
+.tableTitle{
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	font-family: "Campton-Medium";
+	position: absolute;
+	top: 35px;
+	letter-spacing: 2px;
+}
+
+.featureTitle{
+	position: absolute;
+	width: 100%;
+	top: 25px;
+	letter-spacing: 12px;
+	font-size: 17px;
+	font-family: "Campton-Medium";
+	color: #3E3E3E;
+	text-align: center;
+	z-index: 3;
+}
+.featureContent{
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	z-index: 3;
+	text-align: center;
+}
+
+.featureContent.contentRight{
+	left: 50%;
+	/*right: 0;*/
+}
+
+.featureContent p{
+	font-family: "Campton-Medium";
+	font-size: 18px;
+	width: 80%;
+	margin-left: 10%;
+	height: auto;
+	text-align: left;
+
+}
+
+.featureContent .title{
+	position: absolute;
+	top: 40%;
+}
+
+.featureContent .message{
+	position: absolute;
+	top: 50%;
+}
+
+.featureContent .featureButtons{
+	position: absolute;
+	top: 75%;
+}
+
+.featureFullTextMiddle{
+	text-align: center;
+	font-family: "Campton-ExtraBold";
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 50px;
+	letter-spacing: 3px;
+	font-size: 12px;
+	/*opacity: 0;*/
+	color: #3E3E3E;
+
+}
+/*.featureFullTextMiddle p{
+	margin-top: 20px;
+}*/
+.bold{
+	font-family: "Campton-Bold" !important;
+}
+
+.toteFit{
+	width: 100%;
+}
+
+@media only screen and (max-width: 1139px) {
+
+	.boots{
+		width: 85%;
+		margin-left: 3%;
+	}
+
+}
+
+@media only screen and (max-width: 835px) {
+	.boots{
+		width: 95%;
+		margin-left: -4%;
+	}
+}
+
+
+@media only screen and (max-width: 796px) {
+	.centeredImgFull{
+		bottom: 0;
+	}
+	.featureMessage .title{
+		width: 100%;
+		height: auto;
+	}
+
+	.featureMessage .message{
+		width: 100%;
+		text-align: center;
+		float: auto;
+	}
+
+	.message{
+		height: 100%;
+	}
+
+	.featureMessage .title p{
+		width: 100%;
+		text-align: center !important;
+		padding-top: 0px;
+		padding-left: 0px;
+	}
+	.featureMessage .message p{
+		width: 100%;
+		height: 50%;
+		float: auto;
+		padding-top: 0px;
+		padding-left: 0px;
+	}
+	.featureMessage .featureButtons input{
+		margin-left: 0px;
+		margin: auto auto;
+	}
+
+	.threeInfoCell.boots .featureButtons {
+		width: 100%;
+		text-align: center;
+	}
+
+	.threeInfoCell.boots .featureButtons input{
+		margin: auto auto;
+		float: auto;
+	}
+
+	.tabletHide{
+		display: none;
+	}
+
+	.tabletShow{
+		display: block;
+	}
+
+	.tableOfItems{
+		height: 1650px;
+	}
+
+	.threeInfoCell.boots .tableImg{
+		width: 70%;
+		margin-right: 30%;
+	}
+
+	.threeInfoCell.boots{
+		width: 100%;
+		margin-left: auto;
+	}
+
+	.threeInfoCell tr{
+		/*width: 100%;*/
+	}
+
+	.threeInfoCell.coats tr{
+		/*width: 100%;*/
+		text-align: center;
+	}
+
+	.threeInfoCell.coats tr td{
+		/*width: 100%;*/
+		text-align: center;
+	}
+
+	.threeInfoCell tr td{
+		/*width: 100%;*/
+		height: 33%
+	}
+
+
+	.threeInfoCell.boots tr td p{
+		width: 100%;
+		margin-left: 0%
+	}
+
+	.threeInfoCell tr{
+		height: auto;
+	}
+
+	.vintage{
+		margin-left: 5%;
+	}
+
+	.vintage tr td{
+		width: 100%;
+	}
+
+}
+
+
+
+
+
+
+

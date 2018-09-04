@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../../css/MyFontsWebfontsKit.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../css/shop/header.css">
+    <link rel="stylesheet" type="text/css" href="../../css/shop/navBar.css">
+    <link rel="stylesheet" type="text/css" href="../../css/shop/landing.css">
+    <link rel="stylesheet" type="text/css" href="../../css/shop/product/grid.css">
+    <link rel="stylesheet" type="text/css" href="../../css/shop/product/gallery2.css">
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+
+    <link rel="stylesheet" type="text/css" href="../../css/hero.css">
+
+    <script src="https://sdks.shopifycdn.com/js-buy-sdk/v0/latest/shopify-buy.umd.polyfilled.min.js"></script>
+    <script src="../../js/shopLanding.js"></script>
+    <script src="../../js/grid.js"></script>
+    <script src="../../js/gallery.js"></script>
+    <script src="../../js/checkout.js"></script>
+    
+    <title>Aesthete</title>
+</head>
+
+<body>
+
+<div class="headerBar" id="headerBar">
+    <nav role="navigation">
+      <div id="menuToggle">
+        <input type="checkbox" />
+        
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <ul id="menu">
+          <a href="http://aesthete.us/shop"><li>Shop</li></a>
+        </ul>
+      </div>
+    </nav>
+
+    <input class="shop" type="button" value="SHOP" />
+    <!-- <input class="inspire" type="button" value="INSPIRATION" /> -->
+
+
+    <input class="logo" id="headerLogo" type="image" src="../../images/header/logo.png"/>
+
+
+    <input class="cart" id="shoppingBag" type="image" src="../../images/header/shoppingBag.png"/>
+
+    <!-- <input class="login" id="login" type="button" value="LOGIN" />
+    <input class="signup" id="signUp" type="button" value="SIGN UP" /> -->
+
+
+</div>
+
+<div class="navBar">
+    <input class="featuredButton" id = "featuredButton" type="button" value="FEATURED" />
+    <input class="teesButton" style = "font-weight: bold;" id = "teesButton" type="button" value="TEES" />
+    <input class="bootsButton" id="bootsButton" type="button" value="BOOTS" />
+    <input class="coatsButton"  id="coatsButton" type="button" value="COATS" />
+    <!-- <input class="vintageButton" id="vintageButton" type="button" value="VINTAGE" /> -->
+    <input class="accessoriesButton" id="accessoriesButton" type="button" value="ACCESSORIES" />
+</div>
+
+<div class="hero center heroProductPage" id="feature1">
+    <div class="heroFeature">
+        <p class="title">Cotton Tees</p>
+        <p class="subtext">100% Organic Cotton</p>
+        <p class="closing1"> <span class="closing2"></span></p>
+
+
+        <input class="heroCTA" type="button" value="COLORS AND DETAILS >" />
+
+    </div>
+
+    <img class ="image1" src="../../images/shop/product/cottontees/1.png" />
+</div>
+
+<div class="hero mobileProductPage" id="feature1">
+
+    <img class ="image1" src="../../images/shop/product/cottontees/mobile/1.png" />
+</div>
+
+<div class="grid">
+    <div class="row2">
+        <div class="module" style="background-image: url('../../images/shop/product/cottontees/color1.jpg')">
+            <div class="productDetailGrid" id = "productDetailGrid1">
+                <div class="productCartAndDivider">
+
+                    <div class="horizSpacer"></div>
+                    <input id="cartGridFinal1" class="10245047688" type="image" src="../../images/shop/product/addToCart.png"/>
+
+                </div>
+
+                <div class="productSize">
+
+                    <input id="productSizeSButton1" class="0" type="button" value="S"/>
+
+                    <input id="productSizeMButton1" class="1" type="button" value="M"/>
+
+                    <input id="productSizeLButton1" class="2" type="button" value="L"/>
+                    <input id="productSizeXLButton1" class="3" type="button" value="XL"/>
+                </div>
+
+                <div class="title">
+                <span>Cream White</span>
+                </div>
+                
+            </div>
+
+            <div class="detail">
+                <div class="info">
+                    <a href="/shop/product/cotton-tees/main"><span class="title">100% Organic Cotton</span> <span class="variant">Cream White</span> | <span class="price">$80</span></a>
+                    <p class="subtext">100% Organic Cotton. 11oz heavy-weight cotton custom developed and weaved in Los Angeles, California. All pricing based on account membership and includes sales tax, free shipping and returns.</p>
+                </div>
+
+                <input class ="addToCart" id="cartGrid1" type="image" src="../../images/shop/product/addToCart.png" />
+            </div>
+
+        </div>
+        <div class="module" style="background-image: url('../../images/shop/product/cottontees/color2.jpg')">
+            <div class="productDetailGrid" id = "productDetailGrid2">
+                <div class="productCartAndDivider">
+
+                    <div class="horizSpacer"></div>
+                    <input id="cartGridFinal2" class="10245047688" type="image" src="../../images/shop/product/addToCart.png"/>
+
+                </div>
+
+                <div class="productSize">
+
+                    <input id="productSizeSButton2" class="4" type="button" value="S"/>
+
+                    <input id="productSizeMButton2" class="5" type="button" value="M"/>
+
+                    <input id="productSizeLButton2" class="6" type="button" value="L"/>
+                    <input id="productSizeXLButton2" class="7" type="button" value="XL"/>
+                </div>
+
+                <div class="title">
+                <span>Faded Black</span>
+                </div>
+            </div>
+
+            <div class="detail">
+                <div class="info">
+                    <a href="/shop/product/cotton-tees/main"><span class="title">100% Organic Cotton</span> <span class="variant">Faded Black</span> | <span class="price">$80</span></a>
+                    <p class="subtext">100% Organic Cotton. 11oz heavy-weight cotton custom developed and weaved in Los Angeles, California. All pricing based on account membership and includes sales tax, free shipping and returns.</p>
+                </div>
+
+               
+                <input class ="addToCart" id="cartGrid2" type="image" src="../../images/shop/product/addToCart.png" />
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- !!! -->
+<!-- BIG GALLERY -->
+<!-- !!! -->
+
+<div class="gallery fullwidth" id="woolFeature">
+    
+    <div class="productDetailGallery" id ="productDetailGallery1" >
+        <p class="headerDetail"> Cotton Tee | $80 </p>
+
+        <div class="spacer"></div>
+
+        <p class="descDetail">100% Organic Cotton Stripe Tee. Inspired by nautical stuff and other things boat like. Hand made in small batches in the USA. Learn More</p>
+
+        
+        <div class="spacer"></div>
+
+        <div class="productCartOptions">
+                <div class="productCartAndDivider">
+
+                    <div class="horizSpacer"></div>
+                    <input id="cartGridFinal3" class="10245047688" type="image" src="../../images/shop/product/addToCart.png"/>
+
+                </div>
+
+                <div class="productSize">
+
+                    <input id="productSizeSButton3" class = "0" type="button" value="S"/>
+
+                    <input id="productSizeMButton3" class = "1" type="button" value="M"/>
+
+                    <input id="productSizeLButton3" class = "2" type="button" value="L"/>
+                    <input id="productSizeXLButton3" class = "3" type="button" value="XL"/>
+                </div>
+
+                <div class="title">
+                <span>Cream White</span>
+                </div>
+                
+        </div>
+    </div>
+
+    <input class ="info" id="infoButton1"  type="image" src="../../images/shop/product/infoButton.png"/>
+    <img class ="image1" src="../../images/shop/product/cottontees/2.png" />
+</div>
+
+<div class="gallery fullwidth" id="woolFeature">
+    
+    <div class="productDetailGallery" id ="productDetailGallery2" >
+        <p class="headerDetail"> Cotton Tee | $80 </p>
+
+        <div class="spacer"></div>
+
+        <p class="descDetail">100% Organic Cotton Stripe Tee. Inspired by nautical stuff and other things boat like. Hand made in small batches in the USA. Learn More</p>
+
+        
+        <div class="spacer"></div>
+
+        <div class="productCartOptions">
+                <div class="productCartAndDivider">
+
+                    <div class="horizSpacer"></div>
+                    <input id="cartGridFinal4" class="10245047688" type="image" src="../../images/shop/product/addToCart.png"/>
+
+                </div>
+
+                <div class="productSize">
+
+                    <input id="productSizeSButton4" class = "4" type="button" value="S"/>
+
+                    <input id="productSizeMButton4" class = "5" type="button" value="M"/>
+
+                    <input id="productSizeLButton4" class = "6" type="button" value="L"/>
+                    <input id="productSizeXLButton4" class = "7" type="button" value="XL"/>
+                </div>
+
+                <div class="title">
+                <span>Faded Black</span>
+                </div>
+                
+        </div>
+    </div>
+
+    <input class ="info" id="infoButton2"  type="image" src="../../images/shop/product/infoButtonWhite.png"/>
+    <img class ="image1" src="../../images/shop/product/cottontees/3.png" />
+</div>
+
+
+
+<div class="gallery fullwidth" id="woolFeature">
+    <div class="productDetailGallery" id ="productDetailGallery4">
+            <p class="headerDetail"> Cotton  Tee | $80 </p>
+
+            <div class="spacer"></div>
+
+            <p class="descDetail">100% Organic Cotton Stripe Tee. Inspired by nautical stuff and other things boat like. Hand made in small batches in the USA. Learn More</p>
+
+            
+            <div class="spacer"></div>
+
+            <div class="productCartOptions">
+                    <div class="productCartAndDivider">
+
+                        <div class="horizSpacer"></div>
+                        <input id="cartGridFinal5" class="10245047688" type="image" src="../../images/shop/product/addToCart.png"/>
+
+                    </div>
+
+                    <div class="productSize">
+
+                        <input id="productSizeSButton5" class = "0" type="button" value="S"/>
+
+                        <input id="productSizeMButton5" class = "1" type="button" value="M"/>
+
+                        <input id="productSizeLButton5" class = "2" type="button" value="L"/>
+                        <input id="productSizeXLButton5" class = "3" type="button" value="XL"/>
+                    </div>
+
+                    <div class="title">
+                    <span>Cream White</span>
+                    </div>
+                    
+            </div>
+         </div>
+
+    <input class ="info" id="infoButton4"  type="image" src="../../images/shop/product/infoButton.png"/>
+    <img class ="image1" src="../../images/shop/product/cottontees/4.png" />
+</div>
+
+<div class="gallery fullwidth" id="woolFeature">
+    <div class="productDetailGallery" id ="productDetailGallery5">
+            <p class="headerDetail"> Cotton Tee | $80 </p>
+
+            <div class="spacer"></div>
+
+            <p class="descDetail">100% Organic Cotton Stripe Tee. Inspired by nautical stuff and other things boat like. Hand made in small batches in the USA. Learn More</p>
+
+            
+            <div class="spacer"></div>
+
+            <div class="productCartOptions">
+                    <div class="productCartAndDivider">
+
+                        <div class="horizSpacer"></div>
+                        <input id="cartGridFinal6" class="10245047688" type="image" src="../../images/shop/product/addToCart.png"/>
+
+                    </div>
+
+                    <div class="productSize">
+
+                        <input id="productSizeSButton6" class = "4" type="button" value="S"/>
+
+                        <input id="productSizeMButton6" class = "5" type="button" value="M"/>
+
+                        <input id="productSizeLButton6" class = "6" type="button" value="L"/>
+                        <input id="productSizeXLButton6" class = "7" type="button" value="XL"/>
+                    </div>
+
+                    <div class="title">
+                    <span>Faded Black</span>
+                    </div>
+                    
+            </div>
+         </div>
+
+    <input class ="info" id="infoButton5"  type="image" src="../../images/shop/product/infoButtonWhite.png"/>
+    <img class ="image1" src="../../images/shop/product/cottontees/5.png" />
+</div>
+
+<div class="gallery fullwidth" id="woolFeature">
+    <div class="productDetailGallery" id ="productDetailGallery7">
+            <p class="headerDetail"> Cotton Tee | $80 </p>
+
+            <div class="spacer"></div>
+
+            <p class="descDetail">100% Organic Cotton Stripe Tee. Inspired by nautical stuff and other things boat like. Hand made in small batches in the USA. Learn More</p>
+
+            
+            <div class="spacer"></div>
+
+            <div class="productCartOptions">
+                    <div class="productCartAndDivider">
+
+                        <div class="horizSpacer"></div>
+                        <input id="cartGridFinal7" class="10245047688" type="image" src="../../images/shop/product/addToCart.png"/>
+
+                    </div>
+
+                    <div class="productSize">
+
+                        <input id="productSizeSButton7" class = "4" type="button" value="S"/>
+
+                        <input id="productSizeMButton7" class = "5" type="button" value="M"/>
+
+                        <input id="productSizeLButton7" class = "6" type="button" value="L"/>
+                        <input id="productSizeXLButton7" class = "7" type="button" value="XL"/>
+                    </div>
+
+                    <div class="title">
+                    <span>Faded Black</span>
+                    </div>
+                    
+            </div>
+         </div>
+
+    <input class ="info" id="infoButton7"  type="image" src="../../images/shop/product/infoButton.png"/>
+    <img class ="image1" src="../../images/shop/product/cottontees/6.png" />
+</div>
+
+<div class="footer">
+
+    <div class="nav">
+        <input class="membership" type="button" value="Membership" />
+        <input class="membership" type="button" value="Terms Of Use" />
+        <input class="membership" type="button" value="Privacy Policy" />
+        <input class="membership" type="button" value="Return Policy" />
+        <input class="membership" type="button" value="Contact Us" />
+    </div>
+
+    <div class="social">
+        <input class="instaIcon" type="image" src="../../images/footer/social/instaIcon.png"/>
+        <input class="mailIcon" type="image" src="../../images/footer/social/mailIcon.png"/>
+        <input class="twitterIcon" type="image" src="../../images/footer/social/twitterIcon.png"/>
+        <input class="faceBookIcon" type="image" src="../../images/footer/social/facebookIcon.png"/>
+    </div>
+
+</div>
+
+</body>
+</html>

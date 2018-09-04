@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<!--      
+      _/_/    
+   _/    _/          Designed by: Dustin Simantob
+  _/_/_/_/   _/  
+ _/    _/            Developed by: Ritesh Pakala
+_/    _/   
+
+-->
+
+<html lang="en">
+<head>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCLD3MQ');</script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
+    <meta property="og:image" content="/images/logos/preview.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logos/favicon.ico">
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/shop/landing.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/hero.css">
+    <link rel="stylesheet" type="text/css" href="/css/inspiration.css">
+    <link rel="stylesheet" type="text/css" href="/css/blogGrid.css">
+
+    <script src="https://sdks.shopifycdn.com/js-buy-sdk/v0/latest/shopify-buy.umd.polyfilled.min.js"></script>
+    <script src="../js/inspiration.js"></script>
+    
+    <title>Aesthete | Blog</title>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        if (window.location.href.indexOf("www") > -1){
+            $.get('https://www.aesthete.us/blog/posts/req', function(list) {
+
+                var firstTitle;
+                var firstSummary;
+                var firstDate;
+                var firstIndex;
+                $.each(list, function( index, value ) {
+                  if(value != null){
+                    if(index%2 == 0){
+                        //even means new row
+                        $("#blogGrid").prepend("<div class = 'row'>"+
+                            "<div class = 'module'>"+
+                            "<div class = 'previewImage'><a href='/blog/:"+index+"'><img src='/images/inspiration/blog/posts/"+index+"/feature.png'/></a></div>"+
+                            "<div class = 'previewText'><span class='title'>"+value.title+"</span>"+
+                            "<span class='summary'>"+value.summary+"</span>"+
+                            "<span class='date'>"+value.date+"</span></div></div><div class='moduleSpacer'></div>"+
+                            "<div class = 'module'>"+
+                            "<div class = 'previewImage'><a href='/blog/:"+firstIndex+"'><img src='/images/inspiration/blog/posts/"+firstIndex+"/feature.png'/></a></div>"+
+                            "<div class = 'previewText'><span class='title'>"+firstTitle+"</span>"+
+                            "<span class='summary'>"+firstSummary+"</span>"+
+                            "<span class='date'>"+firstDate+"</span></div></div></div>"+
+                            "<div class='rowSpacer'></div>");
+                    }else if(index == list.length-1){
+
+                        firstTitle = value.title;
+                        firstSummary = value.summary;
+                        firstDate = value.date;
+                        firstIndex = index;
+
+                        $("#blogGrid").prepend("<div class = 'row'>"+
+                            "<div class = 'module'>"+
+                            "<div class = 'previewImage'><a href='/blog/:"+firstIndex+"'><img src='/images/inspiration/blog/posts/"+firstIndex+"/feature.png'/></a></div>"+
+                            "<div class = 'previewText'><span class='title'>"+firstTitle+"</span>"+
+                            "<span class='summary'>"+firstSummary+"</span>"+
+                            "<span class='date'>"+firstDate+"</span></div></div></div>"+
+                            "<div class='rowSpacer'></div>");
+                    }else{
+
+                        firstTitle = value.title;
+                        firstSummary = value.summary;
+                        firstDate = value.date;
+                        firstIndex = index;
+                    }
+                  }
+                });
+            });
+        }else{
+            $.get('https://aesthete.us/blog/posts/req', function(list) {
+
+                var firstTitle;
+                var firstSummary;
+                var firstDate;
+                var firstIndex;
+                $.each(list, function( index, value ) {
+                  if(value != null){
+                    if(index%2 == 0){
+                        //even means new row
+                        $("#blogGrid").prepend("<div class = 'row'>"+
+                            "<div class = 'module'>"+
+                            "<div class = 'previewImage'><a href='/blog/:"+index+"'><img src='/images/inspiration/blog/posts/"+index+"/feature.png'/></a></div>"+
+                            "<div class = 'previewText'><span class='title'>"+value.title+"</span>"+
+                            "<span class='summary'>"+value.summary+"</span>"+
+                            "<span class='date'>"+value.date+"</span></div></div><div class='moduleSpacer'></div>"+
+                            "<div class = 'module'>"+
+                            "<div class = 'previewImage'><a href='/blog/:"+firstIndex+"'><img src='/images/inspiration/blog/posts/"+firstIndex+"/feature.png'/></a></div>"+
+                            "<div class = 'previewText'><span class='title'>"+firstTitle+"</span>"+
+                            "<span class='summary'>"+firstSummary+"</span>"+
+                            "<span class='date'>"+firstDate+"</span></div></div></div>"+
+                            "<div class='rowSpacer'></div>");
+                    }else if(index == list.length-1){
+
+                        firstTitle = value.title;
+                        firstSummary = value.summary;
+                        firstDate = value.date;
+                        firstIndex = index;
+
+                        $("#blogGrid").prepend("<div class = 'row'>"+
+                            "<div class = 'module'>"+
+                            "<div class = 'previewImage'><a href='/blog/:"+firstIndex+"'><img src='/images/inspiration/blog/posts/"+firstIndex+"/feature.png'/></a></div>"+
+                            "<div class = 'previewText'><span class='title'>"+firstTitle+"</span>"+
+                            "<span class='summary'>"+firstSummary+"</span>"+
+                            "<span class='date'>"+firstDate+"</span></div></div></div>"+
+                            "<div class='rowSpacer'></div>");
+                    }else{
+
+                        firstTitle = value.title;
+                        firstSummary = value.summary;
+                        firstDate = value.date;
+                        firstIndex = index;
+                    }
+                  }
+                });
+            });
+        }
+    });
+    </script>
+</head>
+
+<body>
+
+<% include newsletter %>
+
+<% include header %>
+
+<% include inspirationNavBar %>
+
+<% include cartTest %>
+
+<!-- BLOG -->
+<div id="blogGrid" class = "blogGrid">
+
+   <!--  <div class = "row">
+
+        <div class = "module">
+            <div class = "previewImage">
+            </div>
+            <div class = "previewText">
+            </div>
+
+        </div>
+        <div class="moduleSpacer"></div>
+        <div class = "module">
+            <div class = "previewImage">
+            </div>
+            <div class = "previewText">
+                <span> Lorem ipsum is a bitch.</span>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="rowSpacer"></div>
+    <div class = "row">
+
+        <div class = "module">
+        <div class = "previewImage">
+            </div>
+            <div class = "previewText">
+            </div>
+
+        </div>
+        <div class="moduleSpacer"></div>
+        <div class = "module">
+            <div class = "previewImage">
+            </div>
+            <div class = "previewText">
+            </div>
+
+        </div>
+
+    </div> -->
+
+
+</div>
+    
+<!-- END -->
+
+
+</body>
+</html>

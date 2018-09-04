@@ -1,0 +1,705 @@
+@font-face {
+    font-family: Campton-Light;
+    src: url("../../fonts/Campton-Light.otf") format("opentype");
+}
+@font-face {
+    font-family: Campton-Bold;
+    src: url("../../fonts/Campton-Bold.otf") format("opentype");
+}
+
+.grid{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: auto;
+	margin-left: 0.1vw;
+
+	/*display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 960px;
+    width: 80%;*/
+}
+
+.grid a{
+	text-decoration: none;
+	color: #000;
+}
+
+.grid a:hover{
+	font-family: Campton-Bold;
+}
+
+.row3{
+	padding-left: 0.5vw;
+}
+
+.grid .row3 .module{
+    border: 2px solid #F5F5F5;
+    display: inline-block;
+    flex-basis: 1;
+    margin-top: 0.5em;
+    /*margin-bottom: 1em;*/
+    margin-left: 0.5vw;
+    width: 31.5vw;
+    height: 31.5vw;
+
+    /*background-color: #e6e6e6;*/
+    /*background-size: 100%;*/
+
+    position:relative;
+
+	overflow: hidden;
+}
+
+.grid .row3 .module img{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	z-index: 0;
+}
+
+.grid .row2 .module{
+    border: 2px solid #F5F5F5;
+    display: inline-block;
+    flex-basis: 1;
+    margin-top: 0.5em;
+    /*margin-bottom: 1em;*/
+    margin-left: 0.5vw;
+    width: 48vw;
+    height: 35vw;
+
+    /*background-color: #e6e6e6;
+    background-size: 100%;*/
+
+    position:relative;
+
+    overflow: hidden;
+}
+
+.grid .row2 .module img{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	z-index: 0;
+}
+
+.grid .module .productDetailGrid{
+	width: 98%;
+	height: 8%;
+	border-radius: 6px;
+	background-color: white;
+	margin-left: 1%;
+	margin-top: 68%;
+	border: 1px solid #5A5A5A;
+
+	opacity: 0.0;
+
+	position: absolute;
+    z-index: 1;
+}
+
+.grid .row2 .module .productDetailGrid{
+	width: 98%;
+	height: 8%;
+	border-radius: 6px;
+	background-color: white;
+	margin-left: 1%;
+	margin-top: 49.9%;
+	border: 1px solid #5A5A5A;
+
+	position: absolute;
+    z-index: 1;
+}
+
+.grid .module .productDetailGrid .productSize{
+	width: 40%;
+	height: 100%;
+	float: right;
+	padding-top: 0.2vw;
+	text-align: right;
+	padding-right: 0.5vw;
+
+    z-index: 1;
+}
+.grid .module .productDetailGrid .productCartAndDivider{
+	width: 10%;
+	height: 100%;
+	float: right;
+	padding-top: 0.3vw;
+	text-align: center;
+}
+
+.grid .module .productDetailGrid input[type="button"]{
+	-webkit-appearance: none;
+	width: 19%;
+	height: 80%;
+	border: 1px solid #000;
+	background-color: transparent;
+	border-radius: 15px;
+	padding-top: 2.5px;
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+}
+
+.grid .module .productDetailGrid.laceup input[type="button"]{
+	width: 15%;
+	height: 72.5%;
+	margin-top: 1%;
+}
+
+
+.grid .module .productDetailGrid input[type="image"]{
+	width: 55%;
+	height: 65%;
+	float: right;
+	margin-right:0.7vw;
+}
+
+.grid .module .productDetailGrid .horizSpacer{
+	width: 1px;
+	height: 80%;
+	background-color: #979797;
+	float: left;
+}
+
+.grid .module .productDetailGrid .title{
+	width: 40%;
+	height: 100%;
+	float: left;
+	font-family: Campton-Bold;
+	font-size: 1.2vw;
+	margin-left: 2%;
+	padding-top: 0.6vw;
+}
+
+.grid .module .productDetailGrid .productSpecificCartAndDivider{
+	float: right;
+}
+
+.grid .module .detail{
+    width: 98%;
+    height: 15%;
+    background-color: white;
+    font-family: 'Campton-Light';
+    padding-left: 2%;
+    font-size: 13px;
+    padding-top: 2vw;
+
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    /*border: 1px solid #5A5A5A;*/
+    /*overflow: scroll;*/
+}
+
+.grid .module .detail .title{
+   	font-size: 25px;
+    font-family: 'Campton-Bold';
+    /*overflow: scroll;*/
+}
+
+.grid .module .detail .variant{
+   	font-size: 20px;
+    font-family: 'Campton-Light';
+    /*overflow: scroll;*/
+}
+
+.grid .module .detail .price{
+   	
+   	font-size: 20px;
+    font-family: 'Campton-Bold';
+    /*overflow: scroll;*/
+}
+
+.grid .module .detail .subtext{
+    /*width: 80%;*/
+    font-size: 12px;
+    font-family: Campton-Bold;
+    line-height: 25px;
+    margin-top: 1vw;
+}
+.grid .module .detail .subtext2{
+    /*width: 80%;*/
+    font-size: 15px;
+    font-family: Campton-Light;
+}
+
+.grid .module .info{
+    width: 80%;
+    float: left;
+    position: absolute;
+    top: 1.5vw;
+    left: 1vw;
+}
+.grid .row3 .module .detail .addToCart{
+	width: 8%;
+	height: 40%;
+	float: right;
+	margin-right: 1.5vw;
+	margin-top: .5vw;
+}
+
+.grid .row2 .module .detail .addToCart{
+	width: 6%;
+	height: 40%;
+	float: right;
+	margin-right: 1.5vw;
+	margin-top: .5vw;
+}
+
+@media only screen and (max-width: 2200px) {
+	.grid .module .info{
+	    /*width: 80%;*/
+	    top: 1vw;
+	}
+}
+
+@media only screen and (max-width: 1900px) {
+	.grid .module .detail .subtext2{
+	    /*width: 80%;*/
+	    font-size: 15px;
+	}
+}
+
+@media only screen and (max-width: 1800px) {
+	.grid .module .detail .title{
+	   	font-size: 20px;
+	    font-family: 'Campton-Bold';
+	    /*overflow: scroll;*/
+	}
+
+	.grid .module .detail .variant{
+	   	font-size: 15px;
+	    font-family: 'Campton-Light';
+	    /*overflow: scroll;*/
+	}
+
+	.grid .module .detail .price{
+	   	
+	   	font-size: 16px;
+	    font-family: 'Campton-Bold';
+	    /*overflow: scroll;*/
+	}
+}
+
+@media only screen and (max-width: 1650px) {
+	.grid .module .detail .title{
+	   	font-size: 20px;
+	    font-family: 'Campton-Bold';
+	    /*overflow: scroll;*/
+	}
+
+	.grid .module .detail .variant{
+	   	font-size: 15px;
+	    font-family: 'Campton-Light';
+	    /*overflow: scroll;*/
+	}
+
+	.grid .module .detail .price{
+	   	
+	   	font-size: 15px;
+	    font-family: 'Campton-Bold';
+	    /*overflow: scroll;*/
+	}
+
+	.grid .module .detail .subtext2{
+	    /*width: 80%;*/
+	    font-size: 17px;
+	}
+}
+
+@media only screen and (max-width: 1650px) {
+	.grid .module .detail .subtext{
+		margin-top:0.2vw;
+	}
+}
+@media only screen and (max-width: 1350px) {
+	.grid .module .productDetailGrid.laceup input[type="button"]{
+		margin-top: 2%;
+	}
+
+    .grid .row3 .module{
+    	margin-top: 0.25em;
+    	width: 31vw;
+    	height: 31vw;
+	}
+
+	.grid .row2 .module{
+    	margin-top: 0.25em;
+    	width: 47vw;
+    	/*height: 68.5vw;*/
+
+	}
+
+	.grid .module .detail .gridTitle{
+		/*padding-top: 4%;
+		padding-bottom: 4%;
+    	margin-top: 77%;*/
+    	font-size: 15px;
+	}
+
+	.grid .module .detail {
+		/*padding-top: 4%;
+		padding-bottom: 4%;
+    	margin-top: 77%;*/
+    	padding-top: 2%;
+    	height: 17%;
+	}
+	.grid .module .detail .addToCart{
+		margin-right: 1vw;
+		margin-top: 1.25vw !important;
+	}
+
+	.grid .module .detail .subtext{
+		/*padding-top: 4%;
+		padding-bottom: 4%;
+    	margin-top: 77%;*/
+    	font-size: 10px;
+    	line-height: 14px;
+	}
+	/*.grid .row3 .module .detail .subtext {
+	    font-size: 7px;
+	}*/
+	/*.grid .row3 .module .detail .addToCart{
+		padding-top: 4%;
+	}*/
+	.grid .row2 .module .title{
+    	font-size: 12px;
+    	/*height: 68.5vw;*/
+
+	}
+	.grid .row2 .module .variant{
+    	font-size: 12px;
+    	/*height: 68.5vw;*/
+
+	}
+	.grid .row2 .module .price{
+    	font-size: 12px;
+    	/*height: 68.5vw;*/
+
+	}
+
+	.grid .module .detail .title{
+	   	font-size: 15px;
+	    font-family: 'Campton-Bold';
+	    /*overflow: scroll;*/
+	}
+
+	.grid .module .detail .variant{
+	   	font-size: 14px;
+	    font-family: 'Campton-Light';
+	    /*overflow: scroll;*/
+	}
+
+	.grid .module .detail .price{
+	   	
+	   	font-size: 15px;
+	    font-family: 'Campton-Bold';
+	    /*overflow: scroll;*/
+	}
+
+	/*.grid .row2 ,*/
+	.grid .module .detail .subtext2{
+	    /*width: 80%;*/
+	    font-size: 15px;
+	}
+
+}
+@media only screen and (max-width: 1180px) {
+	.grid .row3 .module .detail .subtext{
+		/*padding-top: 4%;
+		padding-bottom: 4%;
+    	margin-top: 77%;*/
+    	padding-top: 0vw;
+    	margin-top: 0vw;
+    	/*font-size: 8px;*/
+	}
+	.grid .row3 .module{
+    	width: 30.5vw;
+    	height: 30.5vw;
+	}
+	.grid .module .detail .subtext2{
+	    /*width: 80%;*/
+	    font-size: 12px;
+	}
+	.grid .module .detail .title{
+	   	font-size: 12px;
+	    font-family: 'Campton-Bold';
+	    /*overflow: scroll;*/
+	}
+
+	.grid .module .detail .variant{
+	   	font-size: 10px;
+	    font-family: 'Campton-Light';
+	    /*overflow: scroll;*/
+	}
+
+	.grid .module .detail .price{
+	   	
+	   	font-size: 11px;
+	    font-family: 'Campton-Bold';
+	    /*overflow: scroll;*/
+	}
+}
+
+@media only screen and (max-width: 870px) {
+	/*.grid .row3 .module .detail .subtext{
+		padding-top: 4%;
+		padding-bottom: 4%;
+    	margin-top: 77%;
+    	padding-top: 0vw;
+    	font-size: 15px;
+	}*/
+
+	.grid .module .detail .subtext{
+		/*padding-top: 4%;
+		padding-bottom: 4%;
+    	margin-top: 77%;*/
+    	font-size: 8px;
+    	line-height: 10px;
+	}
+	.grid .module .detail .subtext2{
+		/*padding-top: 4%;
+		padding-bottom: 4%;
+    	margin-top: 77%;*/
+    	font-size: 8px;
+	}
+}
+
+@media only screen and (max-width: 780px) {
+    .grid .row3 .module{
+    	padding-left: 0em;
+    	margin-top: 0.25em;
+    	margin-left: 0.5em;
+    	width: 95vw;
+    	height: 95vw;
+
+		padding-top: 5px;
+	}
+
+	.grid .row2 .module{
+    	margin-top: 0.25em;
+    	width: 95vw;
+    	height: 78.5vw;
+
+		padding-top: 5px;
+	}
+
+	.grid .module .detail {
+		padding-top: 2%;
+	    font-size: 15px;
+   		height: 17%;
+	}
+
+	.grid .row2 .module .detail{
+	    height: 24.5%;
+	    /*overflow: scroll;*/
+	}
+
+	.grid .row2 .module .title{
+    	font-size: 15px;
+    	/*height: 68.5vw;*/
+
+	}
+
+	.grid .row2 .module .variant{
+    	font-size: 15px;
+    	/*height: 68.5vw;*/
+
+	}
+	.grid .row2 .module .price{
+    	font-size: 15px;
+    	/*height: 68.5vw;*/
+
+	}
+
+	.grid .row2 .module .subtext{
+    	margin-top: 1.5vw;
+    	font-size: 15px;
+    	/*height: 68.5vw;*/
+
+	}
+
+	.grid .module .info{
+	    top: 3vw;
+	    left: 3vw;
+	}
+
+	.grid .row2 .module .detail .addToCart{
+		width: 10%;
+		margin-top: 5vw !important;
+	    /*height: 24.5%;*/
+	    /*overflow: scroll;*/
+	}
+
+	.grid .row2 .module .productDetailGrid .title{
+		padding-top: 0.4vw;
+	}
+
+	.grid .row2 .module .productDetailGrid .productSize input{
+
+		margin-top: 0.6vw;
+	}
+
+	.grid .module .detail .addToCart{
+		margin-right: 4vw!important;
+		margin-top: 4vw !important;
+	}
+
+
+	.grid .module .productDetailGrid .title{
+		padding-top: 2.1vw;
+		font-size: 15px;
+	}
+	.grid .module .productDetailGrid .productCartAndDivider{
+		
+		padding-top: 0.5vw;
+	}
+	.grid .module .productDetailGrid .productSize{
+		/*padding-top: 0.5vw;*/
+		padding-right: 2vw;
+	}
+	/*.grid .row3 .module .productDetailGrid .productCartAndDivider{
+		width: 10%;
+	}
+*/
+	.grid .module .productDetailGrid input[type="image"]{
+		margin-right: 2vw;
+	}
+
+	.grid .module .detail .title{
+	   	font-size: 25px;
+	    font-family: 'Campton-Bold';
+	    /*overflow: scroll;*/
+	}
+
+	.grid .module .detail .variant{
+	   	font-size: 20px;
+	    font-family: 'Campton-Light';
+	    /*overflow: scroll;*/
+	}
+
+	.grid .module .detail .price{
+	   	
+	   	font-size: 21px;
+	    font-family: 'Campton-Bold';
+	    /*overflow: scroll;*/
+	}
+
+	.grid .module .detail .subtext{
+		/*padding-top: 4%;
+		padding-bottom: 4%;
+    	margin-top: 77%;*/
+    	font-size: 15px;
+    	line-height: 30px;
+    	margin-top: 1.5vw !important;
+	}
+	.grid .module .detail .subtext2{
+	    /*width: 80%;*/
+	    font-size: 22px;
+	}
+
+
+	/*.grid .row3 .module .detail .addToCart{
+		padding-top: 4%;
+	}*/
+
+}
+
+@media only screen and (max-width: 675px) {
+	.grid .module .detail .subtext{
+		/*padding-top: 4%;
+		padding-bottom: 4%;
+    	margin-top: 77%;*/
+    	/*font-size: 15px;/**/
+    	line-height: 25px;
+    	margin-top: 0.8vw !important;
+	}
+	.grid .module .detail .subtext2{
+	    /*width: 80%;*/
+	    /*font-size: 22px;*/
+	}
+}
+
+
+@media only screen and (max-width: 580px) {
+	.grid .module .detail .subtext{
+		/*padding-top: 4%;
+		padding-bottom: 4%;
+    	margin-top: 77%;*/
+    	font-size: 12px;
+    	line-height: 21px;
+	}
+}
+@media only screen and (max-width: 540px) {
+	.grid .row2 .module .subtext{
+    	margin-top: 1.5vw;
+    	font-size: 10px;
+    	/*height: 68.5vw;*/
+
+	}
+
+	.grid .module .detail .title{
+	   	font-size: 15px;
+	    font-family: 'Campton-Bold';
+	    /*overflow: scroll;*/
+	}
+
+	.grid .module .detail .variant{
+	   	font-size: 13px;
+	    font-family: 'Campton-Light';
+	    /*overflow: scroll;*/
+	}
+
+	.grid .module .detail .price{
+	   	
+	   	font-size: 13px;
+	    font-family: 'Campton-Bold';
+	    /*overflow: scroll;*/
+	}
+
+	
+	.grid .module .detail .subtext2{
+		/*padding-top: 4%;
+		padding-bottom: 4%;
+    	margin-top: 77%;*/
+    	font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.grid .module .detail .subtext2{
+		/*padding-top: 4%;
+		padding-bottom: 4%;
+    	margin-top: 77%;*/
+    	font-size: 12px;
+	}
+
+}
+
+@media only screen and (max-width: 400px) {
+	.grid .module .detail .subtext{
+    	line-height: 15px;
+	}
+}
+
+@media only screen and (max-width: 330px) {
+	.grid .module .detail .subtext{
+    	font-size: 8px;
+	}
+	.grid .module .detail .subtext2{
+    	font-size: 12px;
+	}
+}
+

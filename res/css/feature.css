@@ -1,0 +1,205 @@
+@font-face {
+    font-family: Campton-Medium;
+    src: url("../fonts/campton-medium.otf") format("opentype");
+}
+
+
+body {
+    opacity: 1;
+    transition: 1.2s opacity;
+}
+
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+
+.featureFull, .featureFullFirst{
+	background-color: #F7F7F7;
+	width: 100%;
+	height: 100%;
+
+	position: relative;
+}
+
+.featureFullBottomLeft{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+
+/*******
+
+Landing
+
+*******/
+.aDotMinimal{
+	width: 42px;
+	height: 34px;
+}
+
+#landingFeatureFirst .featureFullBottomLeft{
+	width: 700px;
+	left: auto;
+	z-index: 0;
+	bottom: 50px;
+
+}
+.featureDummy{
+	position: absolute;
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+	width: 200px;
+	height: 200px;
+
+	background-color: transparent;
+}
+
+.featureInfoType1{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	font-family: 'Campton-Medium';
+	text-align: center;
+	color: #3E3E3E;
+
+
+	transform: translate(0, 62px);
+	transition: transform 0.8s;
+
+	z-index: 1;
+}
+
+.featureInfoType2{
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+	font-family: 'Campton-Medium';
+	text-align: center;
+	color: #3E3E3E;
+	z-index: 1;
+}
+
+.featureInfoType1 .line1{
+	font-size: 8px;
+	letter-spacing: 12px;
+
+	margin-top: 1%;
+	margin-bottom: 2.5%;
+}
+
+.featureInfoType1 .line2{
+	font-size: 12px;
+	letter-spacing: 3px;
+
+
+	font-family: 'Campton-Bold';
+}
+.featureInfoType1 .line3{
+	font-size: 12px;
+	letter-spacing: 3px;
+}
+.featureInfoType1 .buttons{
+	width: 100%;
+	margin-top: 1%;
+}
+.featureFullFirst .subtext1{
+	font-size: 12px;
+	letter-spacing: 3px;
+}
+.featureInfoType1 .buttons input{
+	display: inline-block;
+	background-color: transparent;
+	border: none;
+	font-family: 'Campton-Bold';
+	font-size: 10px;
+	letter-spacing: 4px;
+}
+
+.featureInfoType1 .buttons img {
+	display: inline-block;
+	height: 12px;
+	width: auto;
+}
+
+.featureInfoType1 .buttons .spacer {
+	display: inline-block;
+	width:2%;
+}
+
+#landingDownArrow{
+	position: fixed;
+	width: 34px;
+	height: auto;
+	bottom: 10px;
+}
+
+/********
+
+Handles Animation for landing feature first image, landing feature first sub text and down arrow
+to move accordingly as seen
+
+********/
+.landingDownArrowSendToBottom{
+	bottom: 15px !important;
+	transition: bottom 1.2s ease;
+}
+.landingFeatureFirstImgSendToBottom{
+	bottom: 110px !important;
+	transition: bottom 1.2s ease;
+}
+.featureFullFirstFeatureInfoType2SendToBottom{
+	bottom: 70px !important;
+	transition: bottom 1.2s ease;
+}
+
+
+
+
+@media only screen and (max-width: 956px) {
+	.featureInfoType1{
+		transform: translate(0, 16px);
+		transition: transform 0.8s;
+	}
+	.featureInfoType1 .line1,.line2,.line3{
+		transform: translate(0, 12px);
+		transition: transform 0.8s;
+	}
+	.featureInfoType1 .buttons{
+
+		transform: translate(0, 16px);
+		transition: transform 0.8s;
+	}
+
+/*	#landingFeatureFirstImg{
+		transform: translate(0, -25px);
+		transition: transform 0.8s;
+	}
+	#featureFullFirstFeatureInfoType2{
+		transform: translate(0, -30px);
+		transition: transform 0.8s;
+	}*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

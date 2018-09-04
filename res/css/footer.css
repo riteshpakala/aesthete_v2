@@ -1,0 +1,85 @@
+input:focus {outline:0;}
+
+@font-face {
+    font-family: Campton-Light;
+    src: url("../fonts/Campton-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Campton-Bold;
+    src: url("../fonts/Campton-Bold.otf") format("opentype");
+}
+
+/*.intercom-launcher-frame {
+    left: 20px !important;
+    right: auto !important;
+}
+
+
+.intercom-messenger-frame {
+    left: 20px !important;
+    right: auto !important;
+}
+
+#intercom-container .intercom-borderless{
+	left: 20px !important;
+    right: auto !important;
+
+}*/
+
+.footer{
+	/*margin-top: 0.6vw;*/
+	width: 100%;
+	height: 200px;
+
+	text-align: center;
+	display: inline-block;
+}
+
+.footer .nav {
+	margin-top: 100px;
+}
+
+.footer .nav input{
+	
+    -webkit-appearance: none;
+	/*padding-right: 25px;*/
+	border: none;
+	background-color: transparent;
+	color: #000000;
+	font-family: 'Campton-Light';
+}
+
+.footer .social{
+	margin-top: 30px;
+}
+
+.footer .social input{
+	padding-right: 10px;
+	width: 35px;
+	height: 35px;
+}
+
+.text{
+	text-align: center;
+}
+.text .title{
+	font-family: Campton-Bold;
+
+}
+
+.text .body{
+	font-family: Campton-Light;
+	padding-left: 10vw;
+	padding-right: 10vw;
+
+}
+@media only screen and (max-width: 540px) {
+	.footer .nav input{
+		font-size: 9px;
+	}
+
+	.footer .nav {
+		margin-top: 50px;
+	}
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/css/MyFontsWebfontsKit.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/landing/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/landing/landing.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+
+
+    <script src="../js/landing.js" /></script>
+
+    <script type="text/javascript">
+      var local_data = !JSON.stringify(locals);
+      console.log(local_data);
+    </script>
+    
+    <title>Aesthete</title>
+</head>
+
+<body>
+
+<div class="headerBar">
+    <nav role="navigation">
+      <div id="menuToggle">
+
+        <input type="checkbox" />
+        
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <ul id="menu">
+          <a href="https://demo.aesthete.us/shop"><li>Shop</li></a>
+          <a href="https://demo.aesthete.us/signup"><li>Sign Up</li></a>
+          <a href="#"><li>Login</li></a>
+        </ul>
+      </div>
+    </nav>
+
+    <input class="signup" id="signUp" type="button" value="SIGN UP" />
+    <input class="shop" id="headerBarShop" type="button" value="SHOP" />
+
+
+    <input class="logo" id="headerLogo" type="image" src="../images/header/logo.png"/>
+
+    <input class="cart" type="image" src="../images/header/shoppingBag.png"/>
+    <% if (loggedIn) { %>
+    <input class="login" id="login" type="button" value="LOGIN" />
+    <% } %>
+</div>
+
+<div class="landing">
+    <div class="hero">
+        <div class="heroFeature">
+            <p class="title">Autumn Winter 2017</p>
+            <p class="subtext">Minimal and contemporary. Mindfully sourced. Designed and manufactured in the USA.</p>
+            <p class="closing1">Available Now <span class="closing2">| Free shipping and returns for members.</span></p>
+
+
+            <input class="shop" id="heroFeatureShop" type="button" value="SHOP" />
+
+        </div>
+
+        <input class ="downArrow" id="landingHeroFeatureDownArrow" type="image" src="../images/landing/downArrow.png"/>
+        <img class ="image1" src="../images/landing/hero.png" />
+    </div>
+</div>
+
+<div class="landingMobile">
+
+    <p class="title">AUTUMN</br>WINTER 2017</p>
+    <p class="subtext">
+    Minimal and contemporary. Mindfully sourced. Designed and manufacturered in the USA.</p>
+    <input class="shop" id="heroFeatureShop" type="button" value="SHOP" />
+
+    <p class="closing1">Available Now <span class="closing2">| Free shipping and returns for members.</span></p>
+</div>
+
+<div class="memberPortal" id="landingMemberPortal">
+        <div class="memberFeature">
+            <p class="title">Members Only.</p>
+            <p class="subtext">Sign up to gain free shipping and returns, in addition you’ll receive special access to limited release products.</p>
+            <p class="subtext2">Membership accounts are limited. 1000 remaining accounts available<p>
+
+            <input class ="createAccount" type="button" value="Create Account >"/>
+
+            <input class ="createAccount" type="button" value="Login >"/>
+
+            <p class="subtext2Mobile">Membership accounts are limited. 1000 remaining accounts available<p>
+        </div>
+    </div>
+
+
+<div class="footer">
+
+    <div class="nav">
+        <input class="membership" type="button" value="Membership" />
+        <input class="membership" type="button" value="Terms Of Use" />
+        <input class="membership" type="button" value="Privacy Policy" />
+        <input class="membership" type="button" value="Return Policy" />
+        <input class="membership" type="button" value="Contact Us" />
+    </div>
+
+    <div class="social">
+        <input class="instaIcon" type="image" src="images/footer/social/instaIcon.png"/>
+        <input class="mailIcon" type="image" src="images/footer/social/mailIcon.png"/>
+        <input class="twitterIcon" type="image" src="images/footer/social/twitterIcon.png"/>
+        <input class="faceBookIcon" type="image" src="images/footer/social/facebookIcon.png"/>
+    </div>
+
+</div>
+
+</body>
+</html>

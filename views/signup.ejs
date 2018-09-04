@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--      
+      _/_/    
+   _/    _/          Designed by: Dustin Simantob
+  _/_/_/_/   _/  
+ _/    _/            Developed by: Ritesh Pakala
+_/    _/   
+
+-->
+<html lang="en">
+<head>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCLD3MQ');</script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
+    <meta property="og:image" content="/images/logos/preview.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logos/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/css/MyFontsWebfontsKit.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../css/signup.css">
+
+    <script src="../js/signup.js" /></script>
+    
+    <title>Aesthete | Sign Up</title>
+</head>
+
+<body>
+
+<% include newsletter %>
+
+<% include header %>
+
+<% include cartTest %>
+
+
+<div class="memberPortal" id="landingMemberPortal">
+        <div class="memberFeature">
+            <p class="title">CREATE ACCOUNT</p>
+            <p class="subtext">Sign up to gain special access to limited release products in addition to free shipping and returns on all orders. </p>
+
+            <form class="signupFormMobile" id = "signupFormMobile">
+                <input type="text" id="firstNameMobile" placeholder="First Name"> </input></br>
+
+                <input type="text" id="lastNameMobile" placeholder="Last Name"> </input></br>
+             
+                <input type="text" id="emailMobile" placeholder="Email Address"> </input></br>
+
+                <input type="password" id="passwordMobile" placeholder="Password"> </input></br>
+
+                <input type="password" id="confirmPasswordMobile" placeholder="Confirm Password"> </input></br>
+
+              
+            </form>
+
+
+                
+            <input class ="createAccountMobile" id="createAccountMobile" type="button" value="Create Account"/>
+            </br>
+            <input class ="loginButtonMobile" id="loginButtonMobile" type="button" value="Login"/>
+
+            <p class="subtext2">With an account you’ll be able to access all of our basic line of products. If you’d like to gain access to editorial pieces,</br></br> single item production pieces, and exclusive capsules. Please sign up for an account below.<p>
+
+            </br>
+
+            <p id="passwordDisclaimer" class="subtext2" style="display: none;">Passwords must be 6 or more characters long.</p>
+            </br>
+            </br>
+            <form class="signupForm">
+                <input type="text" id="firstName" placeholder="First Name"> </input>
+
+                <input type="text" id="lastName" placeholder="Last Name"> </input>
+             
+                <input type="text" id="email" placeholder="Email Address"> </input>
+
+                <input type="password" id="password" placeholder="Password"> </input>
+
+                <input type="password" id="confirmPassword" placeholder="Confirm Password"> </input>
+                </br>
+                <input class ="createAccount" id="createAccount" type="button" value="Create Account"/>
+                </br>
+                 <input id="loginButton" class ="loginButton" type="button" value="Login"/>
+            </form>
+
+
+            <p class="subtext3">Membership accounts are limited. <%= locals.memberCount  %> remaining accounts available.<p>
+        </div>
+    </div>
+
+<div class="memberPortalDone" id="memberPortalDone" style="display: none">
+    <div class="memberFeature">
+        <p class="title">Welcome.</p>
+        <p class="subtext">Thanks for signing up. We are excited to have you as a member.</p>
+
+        <p class="subtext2">You now have access to our full assortment of products and free shipping and returns. Enjoy.<p>
+
+        
+        <input class ="shopMemberDone" id="shopMemberDone" type="button" value="SHOP"/>
+
+
+    </div>
+</div>
+
+<% include footer %>
+
+</body>
+</html>

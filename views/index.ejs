@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--      
+      _/_/    
+   _/    _/          Designed by: Dustin Simantob
+  _/_/_/_/   _/  
+ _/    _/            Developed by: Ritesh Pakala
+_/    _/   
+
+-->
+<html lang="en">
+<head>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCLD3MQ');</script>
+
+<meta name="google-site-verification" content="Ca3cAHcRoNXGwTQRa7t90lCay13h_tMu6uDfOCD65eE" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
+    <meta property="og:image" content="/images/logos/preview.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logos/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/landing/landing.css">
+
+    <script src="../js/landing.js" /></script>
+    
+    <title>Aesthete | Sustainable Luxury Fashion for Men</title>
+</head>
+
+<body>
+
+<% include newsletter %>
+
+<% include header %>
+
+
+<div class="landing">
+    <div class="hero">
+        <div class="heroFeature">
+        <% if (locals.loggedIn){ %>
+            <p class="title">WELCOME BACK <%= firstName %></p>
+        <% }else{ %>
+            <p class="title">AUTUMN WINTER 2017</p>
+        <% } %>
+        <% if (locals.loggedIn){ %>
+        <p class="subtext bold">Your Membership ID: <%= accountNum %></p>
+        <p class="subtext smallerFont">Your membership benefits include:</br></br>
+        Vintage Capsule Collection Access.</br>
+        Priority Access to New Releases.
+        Free Shipping and Returns on all orders.</br>
+
+
+        </p>
+
+        <% }else{ %>
+            <p class="subtext">Minimal and contemporary. Mindfully sourced. Designed and manufactured in the USA.</p>
+            <p class="closing1">Available Now <span class="closing2">| Free shipping and returns for members.</span></p>
+            <% } %>
+
+
+            <input class="shop" id="heroFeatureShop" type="button" value="SHOP" />
+
+        </div>
+
+        <img class ="image1" src="../images/landing/hero.png" />
+    </div>
+</div>
+
+<div class="landingMobile" id="landingMobile">
+<div class="hero">
+
+        <!-- <% if (locals.loggedIn){ %>
+        <img class="image1" id="landingMobileHeroImageInactive" src ='/images/landing/mobile/slider/1.png'></img>
+        <% }else{ %>
+        <img class="image1" id="landingMobileHeroImage" src ='/images/landing/mobile/slider/1.png'></img>
+        <% } %>
+
+        <% if (locals.loggedIn){ %>
+            <div class="heroText" id="heroTextInactive">
+                <p class="title">WELCOME BACK <%= firstName %></p>
+                <p class="subtext bold">Your Membership ID: <%= accountNum %></p>
+                <p class="subtext bold smallerFont">Apply your Membership ID as a discount code in checkout to receive free shipping and returns.</p>
+                <p class="subtext smallerFont">Your membership benefits include:</br></br>
+                 Vintage Capsule Collection Access.</br>
+                Free Shipping and Returns on all orders.
+                </br></br>
+            </div>
+
+
+        <% if (locals.loggedIn){ %>
+
+            <input class="shop" id="heroFeatureShopMobileInactive" type="button" value="SHOP" />
+        <% }else{ %>
+
+            <input class="shop" id="heroFeatureShopMobile" type="button" value="SHOP" />
+        <% } %>
+
+        </p>
+
+        <% }else{ %>
+            <div class="heroText" id="heroText">
+                <p class="title">AUTUMN WINTER 2017</p>
+                <p class="subtext">
+                Minimal and contemporary. Mindfully sourced. Designed and manufactured in the USA.</p>
+            </div>
+
+            <% if (locals.loggedIn){ %>
+
+                 <input class="shop" id="heroFeatureShopMobileInactive" type="button" value="SHOP" />
+            <% }else{ %>
+
+                <input class="shop" id="heroFeatureShopMobile" type="button" value="SHOP" />
+            <% } %>
+
+            <p class="closing1" id="closing">Available Now <span class="closing2">| Free shipping and returns for members.</span></p>
+        <% } %> -->
+<a href="/shop"><img class ="image1" src="../images/landing/mobile/hero.png" /></a>
+</div>  
+</div>
+
+<% if (!locals.loggedIn){ %>
+<div class="memberPortal" id="landingMemberPortal">
+    <div class="memberFeature">
+        <p class="title">Members Access.</p>
+        <p class="subtext">Sign up to gain free shipping and returns, in addition you’ll receive special access to limited release products.</p>
+        <p class="subtext2">Membership accounts are limited. <%= locals.memberCount %> remaining accounts available<p>
+
+        <div class="buttons">
+            <input class ="createAccount" id="createAccount" type="button" value="SIGN UP"/><span class="removeSpace">&nbsp;&nbsp;&nbsp;</span>
+            <input class ="loginAccount" id="loginAccount" type="button" value="LOGIN"/>
+        </div>
+
+        <p class="subtext2Mobile">Membership accounts are limited. <%= locals.memberCount  %> remaining accounts available<p>
+    </div>
+</div>
+
+<% } %>
+
+<% include footer %>
+
+</body>
+</html>

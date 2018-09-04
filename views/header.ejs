@@ -1,0 +1,75 @@
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCLD3MQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script src="/js/header.js"> </script>
+<% if (!locals.loggedIn){ %>
+<link rel="stylesheet" type="text/css" href="/css/landing/header.css">
+<% }else{ %>
+<link rel="stylesheet" type="text/css" href="/css/landing/headerLoggedin.css">
+<% } %>
+
+<div class="headerBarGhost" id="headerBarGhost">
+</div>
+
+
+<% if (!locals.newsletterHide) { %>
+
+<div class="headerBar desktop" id ="headerBar" data-section-name="0">
+<% }else{ %>
+<div class="headerBar desktop" id ="headerBar" data-section-name="0">
+<% } %>
+    <nav role="navigation">
+      <div id="menuToggle">
+
+        <input type="checkbox" />
+        
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <ul id="menu">
+          <div id="links">
+            <a href="/shop"><li>SHOP</li></a>
+            <a href="/inspiration"><li>INSPIRATION</li></a>
+            <a href="/blog"><li>BLOG</li></a>
+            <a href="/inspiration/sourcing"><li>SOURCING</li></a>
+            <!-- <a href="/inspiration/materials"><li>MATERIALS</li></a> -->
+            <a href="/inspiration/pricing"><li>PRICING</li></a>
+
+            <% if (!locals.loggedIn){ %>
+
+            <a href="/signup"><li>SIGNUP</li></a>
+
+            <a href="/login"><li>LOGIN</li></a>
+            <% }else{ %>
+
+            <a href="/logout"><li>LOGOUT</li></a>
+            <% } %>
+          </div>
+        </ul>
+      </div>
+    </nav>
+
+    
+
+    <input class="shop" id="headerBarShop" type="button" value="SHOP" />
+    <input class="inspiration" id="inspiration" type="button" value="INSPIRATION" />
+
+
+    <input class="logo" id="headerLogo" type="image" src="/images/header/logo.png"/>
+
+    <input class="cart cartMobile" id="shoppingBag" type="image" src="/images/header/shoppingBag.png"/>
+
+    <% if (!locals.loggedIn){ %>
+    <input class="login" id="login" type="button" value="LOGIN" />
+    <% }else{ %>
+    <input class="logout" id="logout" type="button" value="LOGOUT" />
+    <% } %>
+
+    <% if (!locals.loggedIn){ %>
+    <input class="signup" id="signUp" type="button" value="SIGN UP" />
+    <% } %>
+
+</div>

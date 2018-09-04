@@ -1,0 +1,30 @@
+<div class="headerBar">
+    <nav role="navigation">
+      <div id="menuToggle">
+
+        <input type="checkbox" />
+        
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <ul id="menu">
+          <a href="https://demo.aesthete.us/shop"><li>Shop</li></a>
+          <a href="https://demo.aesthete.us/signup"><li>Sign Up</li></a>
+          <a href="#"><li>Login</li></a>
+        </ul>
+      </div>
+    </nav>
+
+    <input class="signup" id="signUp" type="button" value="SIGN UP" />
+    <input class="shop" id="headerBarShop" type="button" value="SHOP" />
+
+
+    <input class="logo" id="headerLogo" type="image" src="../images/header/logo.png"/>
+
+    <input class="cart" type="image" src="../images/header/shoppingBag.png"/>
+    
+    <% if (loggedIn) { %>
+    <input class="login" id="login" type="button" value="LOGIN" />
+    <% } %>
+</div>

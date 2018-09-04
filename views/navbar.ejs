@@ -1,0 +1,57 @@
+<link rel="stylesheet" type="text/css" href="/css/shop/navBar.css">
+<script src="/js/navbar.js"> </script>
+
+<div class="navBarGhost">
+</div>
+
+<div class="navBar">
+	<% if (locals.featured) { %>
+	<input class="featuredButton" style = "font-weight: bold" id = "featuredButton" type="button" value="FEATURED" />
+	<% }else{ %>
+    <input class="featuredButton" id = "featuredButton" type="button" value="FEATURED" />
+    <% } %>
+
+    <% if (locals.tees) { %>
+    <input class="teesButton" style = "font-weight: bold" id = "teesButton" type="button" value="TEES" />
+	<% }else{ %>
+    <input class="teesButton" id = "teesButton" type="button" value="TEES" />
+    <% } %>
+
+    <% if (locals.boots) { %>
+    <input class="bootsButton" style = "font-weight: bold" id="bootsButton" type="button" value="BOOTS" />
+	<% }else{ %>
+    <input class="bootsButton" id="bootsButton" type="button" value="BOOTS" />
+    <% } %>
+
+    <% if (locals.coats) { %>
+    <input class="coatsButton" style = "font-weight: bold" id="coatsButton" type="button" value="COATS" />
+	<% }else{ %>
+    <input class="coatsButton" id="coatsButton" type="button" value="COATS" />
+    <% } %>
+
+    <% if (locals.vintage) { %>
+    <input class="vintageButton" style = "font-weight: bold" id="vintageButton" type="button" value="VINTAGE" />
+	<% }else{ %>
+    <input class="vintageButton" id="vintageButton" type="button" value="VINTAGE" />
+    <% } %>
+
+    <% if (locals.accessories) { %>
+    <input class="accessoriesButton" style = "font-weight: bold" id="accessoriesButton" type="button" value="ACCESSORIES" />
+	<% }else{ %>
+    <input class="accessoriesButton" id="accessoriesButton" type="button" value="ACCESSORIES" />
+    <% } %>
+
+    <% if (locals.popup) { %>
+    <input class="popupButton" style = "font-weight: bold" id="popupButton" type="button" value="POP UP" />
+    <% }else{ %>
+    <input class="popupButton" id="popupButton" type="button" value="POP UP" />
+    <% } %>
+
+</div>
+
+
+
+
+<div class="shopBar">
+        <input class="cart" id="shoppingBagNav" type="image" src="/images/header/shoppingBag.png"/>
+</div>

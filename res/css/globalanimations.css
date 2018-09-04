@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Campton-Bold;
+    src: url("/fonts/Campton-Bold.otf") format("opentype");
+}
+
+.alert{
+	position: fixed;
+	width: 100%;
+	top: 25vw;
+	z-index: 10000;
+	text-align: center;
+	font-family: Campton-Bold;
+	font-size: 20px;
+	opacity: 0.0;
+	/*background-color: #5A5A5A;*/
+	/*opacity: 0.6;*/
+}

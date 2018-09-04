@@ -1,0 +1,31 @@
+<link rel="stylesheet" type="text/css" href="/css/shop/inspirationNavBar.css">
+<script src="/js/navbar.js"> </script>
+
+<div class="navBarGhost"></div>
+
+<div class="navBar center">
+	<% if (locals.ourstory) { %>
+	<input class="featuredButton" style = "font-weight: bold" id = "ourstoryButton" type="button" value="OUR STORY" />
+	<% }else{ %>
+    <input class="featuredButton" id = "ourstoryButton" type="button" value="OUR STORY" />
+    <% } %>
+
+    <% if (locals.pricing) { %>
+    <input class="teesButton" style = "font-weight: bold" id = "pricingButton" type="button" value="PRICING" />
+	<% }else{ %>
+    <input class="teesButton" id = "pricingButton" type="button" value="PRICING" />
+    <% } %>
+
+    <% if (locals.sourcing) { %>
+    <input class="bootsButton" style = "font-weight: bold" id="sourcingButton" type="button" value="SOURCING" />
+	<% }else{ %>
+    <input class="bootsButton" id="sourcingButton" type="button" value="SOURCING" />
+    <% } %>
+
+    <% if (locals.blog) { %>
+    <input class="coatsButton" style = "font-weight: bold" id="blogButton" type="button" value="BLOG" />
+	<% }else{ %>
+    <input class="coatsButton" id="blogButton" type="button" value="BLOG" />
+    <% } %>
+
+</div>

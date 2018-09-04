@@ -1,0 +1,443 @@
+.gallery{
+	width: 100%;
+	text-align: center;
+}
+
+.grid{
+	display: flex;
+}
+
+.fullwidth{
+	width: 100%;
+	height: 100%;
+
+}
+
+.leftDom{
+	display: inline-block;
+	width: 50vw;
+	margin-left: 0.5vw;
+	position: relative;
+    overflow: hidden;
+}
+
+.rightDom{
+	display: inline-block;
+	width: 50vw;
+	margin-right: 0.6vw;
+	position: relative;
+    overflow: hidden;
+    background-color: gray;
+}
+
+.leftDom img{
+	width: auto;
+	height: 100%;
+}
+
+.rightMin img{
+	width: auto;
+	height: 100%;
+}
+
+.leftMin{
+	display: inline-block;
+	width: 46vw;
+	margin-left: 0.4vw;
+	position: relative;
+    overflow: hidden;
+    background-color: gray;
+}
+
+.rightMin{
+	display: inline-block;
+	width: 47vw;
+	margin-right: 0.7vw;
+	position: relative;
+    overflow: hidden;
+}
+
+.gallery.fullwidth img{
+	width: 98.8%;
+}
+
+.fullwidth .info{
+	position: absolute;
+	width: 2vw;
+	height: 1.9vw;
+	right: 1.5vw;
+	margin-top: 62.2vw;
+}
+.leftDom .info{
+	position: absolute;
+	width: 2vw;
+	height: 1.9vw;
+	right: .6vw;
+	bottom: .5vw;
+}
+.rightMin .info{
+	position: absolute;
+	width: 2vw;
+	height: 1.9vw;
+	right: .6vw;
+	bottom: .5vw;
+}
+
+.productDetailGrid{
+	left: 18vw;
+	bottom: 0vw;
+}
+
+.productDetailRight{
+	position: absolute;
+	right: 20vw;
+}
+
+.productDetailBottom{
+	position: absolute;
+	top: 23vw;
+}
+
+.productDetailPin{
+	width: 5px;
+	height: 5px;
+	background-color: #FFF;
+    border-radius: 100%;
+	border: none;
+	position: absolute;
+	opacity: 0.0;
+	margin-top: 40%;
+	margin-left: 32%;
+}
+
+.productDetail{
+	width: 5px;
+	height: 5px;
+	background-color: #FFF;
+    border-radius: 100%;
+	border: none;
+	position: absolute;
+	opacity: 0.0;
+
+	margin-top: 40%;
+	margin-left: 32%;
+}
+
+.productSpecificSizes{
+	float: left;
+}
+
+#containerForProductDetails{
+	text-align: left;
+    position:relative;
+}
+
+.containerForProductDetails .productDetail .detail{
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	opacity: 0.0;
+
+	font-family: 'Campton-LightDEMO';
+	padding-left: 1vw;
+}
+
+.containerForProductDetails .productDetail .detail .spacer{
+	width: 90%;
+	height: 1px;
+	background-color: #979797;
+	top: 5px;
+}
+
+.containerForProductDetails .productDetail .detail.detailGrid{
+	width: 100%;
+	background-color: transparent;
+}
+
+.containerForProductDetails .productDetail .subtext{
+	width: 90%;
+	font-size: 12px;
+}
+
+.containerForProductDetails .productDetail .productSize{
+	width: 90%;
+}
+
+.containerForProductDetails .productDetail .productSize span{
+	position: absolute;
+	margin-top: 0.23vw;
+}
+
+.containerForProductDetails .productDetail .productSize.productSizeGrid{
+	margin-top: -155px;
+	width: 100%;
+}
+
+.productDetailGrid{
+	left: 20vw;
+}
+
+
+.containerForProductDetails .productDetail .productSize input[type=button]{
+	float: right;
+	width: 24px;
+	height: 24px;
+	border: 1px solid #000;
+	background-color: transparent;
+	border-radius: 15px;
+	padding-top: 2.5px;
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+
+	margin-left: 0.4vw;
+
+}
+
+.containerForProductDetails .productDetail .productSize.productSizeGrid input[type=image]{
+	
+	margin-right: 0.5vw;
+}
+
+.containerForProductDetails .productDetail .productSize .horizSpacer{
+	float: right;
+	width: 1px;
+	height: 25px;
+	background-color: #979797;
+	margin-left: 0vw;
+}
+
+.containerForProductDetails .productDetail .productSize input[type=image]{
+	float: right;
+	width: 25px;
+	height: 20px;
+	margin-left: 0.5vw;
+}
+
+.containerForFixedProduct{
+	display: none;
+}
+
+.productDetailGallery{
+	width: 200px;
+	height: 200px;
+	top: 0;
+	left: 0;
+}
+
+@media only screen and (max-width: 1700px) {
+	.containerForFixedProduct{
+		display: none;
+	}
+	.containerForProductDetails .productDetail .title{
+		width: 90%;
+		font-size: 14px;
+	}
+	.containerForProductDetails .productDetail .subtext{
+		width: 90%;
+		font-size: 10px;
+	}
+	.containerForProductDetails .productDetail .productSize span{
+		font-size: 14px;
+		margin-top: 0.35vw;
+	}
+}
+@media only screen and (max-width: 1550px) {
+	.containerForProductDetails .productDetailPin{
+		margin-top: 30vw;
+	}
+	.containerForProductDetails .productDetail{
+		margin-top: 30vw;
+	}
+	.containerForProductDetails .productDetail .title{
+		width: 90%;
+		font-size: 13px;
+	}
+	.containerForProductDetails .productDetail .subtext{
+		width: 90%;
+		font-size: 10px;
+	}
+	.containerForProductDetails .productDetail .productSize span{
+		font-size: 13px;
+		margin-top: 0.35vw;
+	}
+	.containerForProductDetails .productDetail .productSize{
+		margin-top: 0.45vw;
+	}
+
+	.containerForProductDetails .productDetail .productSize .horizSpacer{
+	
+		margin-right: 0.5vw;
+	}
+
+}
+@media only screen and (max-width: 1450px) {
+	
+}
+@media only screen and (max-width: 1250px) {
+	.containerForProductDetails .productDetail .detail .productSize .horizSpacer{
+		display: none;
+	}
+	.containerForProductDetails .productDetail .subtext{
+		display: none;
+	}
+	.containerForProductDetails .productDetail .detail#bottomSpacer{
+		display:none;
+	}
+	.containerForProductDetails .productDetail .productSize span{
+		display:none;
+	}
+	.productDetail{
+		left: 8vw;
+	}
+
+	.containerForProductDetails .productDetail .productSize input[type=button]{
+		margin-left: 0.45vw;
+		margin-right: 0.45vw;
+	}
+
+	
+
+	.productDetailGrid{
+		left: 9vw;
+	}
+	/*.containerForProductDetails .productDetail .productSize input[type=button]{
+		float: left;
+	}
+	.containerForProductDetails .productDetail .productSize input[type=image]{
+		float: left;
+	}
+
+	.containerForProductDetails .productDetail .productSize.productSizeGrid input[type=button]{
+		float: right;
+	}*/
+
+	
+}
+@media only screen and (max-width: 890px) {
+	.leftDom{
+		margin-left: 0;
+		width: 50vw;
+		height: 80vw;
+	}
+	.rightMin{
+		margin-right: 0.9vw;
+		width: 46vw;
+		height: 80vw;
+	}
+
+	.productDetail{
+		left: -1vw;
+	}
+
+}
+@media only screen and (max-width: 550px) {
+	.rightMin{
+		margin-right: 0.9vw;
+		width: 44vw;
+		height: 80vw;
+	}
+	.gallery .info{
+		width: 6vw;
+		height: 5.9vw;
+		right: 3.5vw;
+		margin-top: 55.2vw;
+	}
+	.gallery.leftDom .info{
+		right: .4vw;
+	}
+	.gallery.rightMin .info{
+		right: .4vw;
+	}
+
+	.containerForProductDetails .productDetail{
+		width: 100%;
+	}
+
+	.productDetail{
+		left: -25vw;
+	}
+
+	.leftDom .productDetail{
+		top: 7vw;
+	}
+
+	.rightMin .productDetail{
+		top: 9vw;
+	}
+
+	.productDetailGrid{
+		left: 50vw;
+	}
+
+	.productSpecificSizes{
+		float: left;
+		margin-left: 0.8vw;
+	}
+
+	.productSpecificCartAndDivider{
+		margin-top: 0.8vw;
+	}
+	.productSpecificCartAndDivider input[type=image]{
+		padding-right: 2vw;
+	}
+
+	.productSizeGrid{
+		margin-right: 2vw;
+	}
+
+	.containerForProductDetails .productDetail .productSize input[type=button]{
+		margin-left: 1vw;
+		margin-right: 1vw;
+	}
+
+	.productSpecificCartAndDivider{
+		margin-right: 0.4vw;
+	}
+
+	.leftDom{
+		width: 100%;
+		height: 100%;
+		text-align: left;
+	}
+	.leftDom img{
+		width: 99%;
+		height: 100%;
+	}
+	.rightMin{
+		margin-top: 1vw;
+		margin-bottom: 1vw;
+		width: 100%;
+		height: 100%;
+		text-align: left;
+	}
+	.rightMin img{
+		width: 100%;
+		height: 100%;
+	}
+	.leftMin{
+		width: 100%;
+	}
+	.leftMin img{
+		width: 98.8%;
+	}
+	.rightDom{
+		margin-top: 1vw;
+		margin-bottom: 1vw;
+		width: 100%;
+	}
+	.rightDom img{
+		width: 98.8%;
+	}
+
+
+	.info{
+		display: none;
+	}
+
+	.tallFixed{
+		margin-top: 105vw;
+	}
+}
+
+
+

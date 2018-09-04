@@ -1,0 +1,119 @@
+input:focus {outline:0;}
+
+.navBar{
+	width: 100%;
+	height: 50px;
+
+	text-align: center;
+
+	background-color: #FFF;
+
+
+  	
+}
+
+.navBarGhost{
+	width: 100%;
+	height: 50px;
+
+	text-align: center;
+
+	background-color: #FFF;
+
+	display: none !important;
+  	
+}
+
+.showNavBar{
+
+	display: block !important;
+}
+
+.center{
+	text-align: center !important;
+}
+
+.navBar-Fixed{
+	position:fixed; top:0px; 
+	padding-right: 4vw;
+	margin:auto; z-index:100000; width:100%;
+
+}
+
+/*.navBar-Fixed input{
+	margin-right: 1%;
+
+}*/
+/*.navBar-Fixed input{
+	margin-top: 0%;
+	padding-top: -1vw;
+}*/
+
+.navBar input{
+	border: none;
+	background-color: transparent;
+	font-family: 'HelveticaNeue';
+	color: #3E3E3E;
+	font-size: 13px;
+	margin-top: 15px;
+	padding-right: 2%;
+	padding-left: 2%;
+	letter-spacing: 2px;
+}
+
+#shoppingBagNav{
+	width: 20px;
+	height: 25px;
+	margin-top: 12px;
+	display: none;
+}
+
+.navBar input:hover{
+	/*text-decoration: underline;*/
+}
+
+.shopBar{
+	top: 0;
+	right: 0;
+	height: 50px;
+	width: 50px;
+	position: fixed;
+	background-color: #FFF;
+	z-index:100001;
+	/*opacity: 0.0;*/
+	display: none;
+	text-align: center;
+}
+
+@media only screen and (max-width: 1250px) {
+	/*.navBar input{
+		margin-top: 1.5%;
+	}*/
+}
+
+@media only screen and (max-width: 650px) {
+	.navBar {
+		display: flex;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		overflow-x:auto;
+    	white-space:nowrap;
+		&:-webkit-scrollbar {display: none;}
+	}
+
+	.navBar input[type="button"]{
+		margin-top: 0px;
+		display: inline-block;
+	}
+	
+	/*#shoppingBagNav{
+		padding-top: 2%;
+		display: inline-block;
+	}*/
+
+}
+@media only screen and (max-width: 540px) {
+	.navBar-Fixed{
+		width: 85vw;
+	}
+}

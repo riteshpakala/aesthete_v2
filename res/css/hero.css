@@ -1,0 +1,595 @@
+@font-face {
+    font-family: Campton-Light;
+    src: url("fonts/Campton-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Campton-SemiBold;
+    src: url("fonts/Campton-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Campton-Bold;
+    src: url("fonts/Campton-Bold.otf") format("opentype");
+}
+
+body{
+
+    overflow: auto !important;
+}
+
+.hero{
+	width: 98%;
+	overflow: hidden;
+	height: 100%;
+	margin-left: 1%;
+
+	font-family: 'Campton-Light';
+	text-align: center;
+	position: relative;
+
+}
+
+
+.featureOverlay{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.1);
+	pointer-events:none;
+}
+.parallax{
+	height: 1024px !important;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero img{
+	width: 100%;
+
+	transition:.5s ease-out;
+}
+
+.laceupHero .title{
+	padding-top: 5vw;
+}
+
+#feature0M{
+	cursor: pointer;
+}
+
+.highlight--1 .featureOverlay{
+
+	background-color: rgba(0, 0, 0, 0.0);
+	transition:.5s ease-out;
+}
+
+.highlight--2 .featureOverlay{
+
+}
+
+.highlight--1 img{
+	width: 102%;
+	transition:.5s ease-out;
+	
+}
+.highlight--2 img{
+	width: 102%;
+	transition:.5s ease-out;
+	
+}
+/*.hero.center{
+	display: none;
+}
+.hero.left{
+	display: none;
+}
+.hero.right{
+	display: none;
+}*/
+
+.heroCart{
+	width: 100%;
+	height: 10%;
+	padding-left: 1vw;
+}
+
+.black{
+	color: #000 !important;
+}
+
+.white{
+	color: #FFF !important;
+	border-color: #FFF !important;
+}
+
+.variantChoices{
+	height: 5%;
+	width: 100%;
+	text-align: center;
+	margin-top: 2%;
+}
+
+.variantChoices input{
+	width: 24px;
+	height: 24px;
+}
+
+.heroFeature input[type="button"]{
+	border: none;
+	border-radius: 0px;
+	background-color: transparent;
+}
+
+.productSpecificSizes{
+}
+
+.productSpecificSizes input[type="button"]{
+	width: 5%;
+	height: 80%;
+	border: 1px solid #000;
+	border-radius: 15px;
+	padding-top: 2.5px;
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+}
+
+.hero.center .heroFeature{
+	width: 100%;
+	height: 5%;
+	position: absolute;
+	margin-top: 20%;
+	color: #FFF;
+	text-align: center;
+	display: inline-block;
+}
+
+.hero.left .heroFeature{
+	width: 65%;
+	height: 5%;
+	position: absolute;
+	margin-top: 13%;
+	margin-left: 8%;
+	color: #000;
+	text-align: left;
+	font-family: 'Campton-Light';
+
+	transition:.5s ease-out;
+}
+
+.hero.right .heroFeature{
+	text-align: right;
+	width: 75%;
+	height: 5%;
+	position: absolute;
+	margin-top: 13%;
+	margin-left: 15%;
+	color: #000;
+
+	transition:.5s ease-out;
+}
+.hero.center .heroFeature .title{
+	font-family: 'Campton-Bold';
+	letter-spacing: 2px;
+	font-size: 40px;
+}
+
+.hero .heroFeature .title{
+	letter-spacing: 2px;
+	font-size: 28px;
+}
+
+.hero.center .heroFeature .subtext{
+	letter-spacing: 2px;
+	font-size: 20px;
+	font-family: Campton-Light;
+}
+
+.hero.center .heroFeature .subtext2{
+	letter-spacing: 2px;
+	font-size: 30px;
+}
+
+
+.hero .heroFeature .subtext{
+	letter-spacing: 2px;
+	font-size: 16px;
+}
+
+.hero .heroFeature .closing1{
+	font-family: 'HelveticaNeue-Bold';
+	letter-spacing: 2px;
+	font-size: 13px;
+}
+
+.hero .heroFeature .closing2{
+	font-family: 'HelveticaNeue';
+	letter-spacing: 2px;
+	font-size: 9px;
+}
+
+.hero.center .heroFeature .heroCTA{
+	border: none;
+	background-color: #000;
+	border-radius: 4px;
+	font-size: 15px;
+	padding: 12px 40px 8px 40px;
+	margin-top: 60px;
+	color: #FFF;
+}
+
+.hero .heroFeature .heroCTA{
+	border: 1px solid #000;
+	color: #FFF;
+	background-color: #000;
+	border-radius: 4px;
+	font-size: 11px;
+	padding: 12px 40px 8px 40px;
+	margin-top: 20px;
+	font-family: Campton-SemiBold;
+	-webkit-appearance: none;
+}
+
+.vCenter{
+	margin-top: 18vw !important;
+}
+
+.heroText{
+	width: 100%;
+	text-align: center;
+}
+
+.heroText img{
+	width: 98.8%;
+}
+
+
+.heroTextContainer{
+	width: 90%;
+	height: 50%;
+	margin-top: 8%;
+	left: 5vw;
+	position: absolute;
+
+	text-align: center;
+
+}
+
+.heroTextContainer input{
+	background: transparent;
+	border: none;
+
+	font-family: Campton-Light;
+	font-size: 20px;
+
+}
+
+.heroTextContainer .title{
+	font-family: Campton-Bold;
+	font-size: 25px;
+	color: #3E3E3E;
+	margin-top: 8vw;
+}
+
+.heroTextContainer .subtext{
+	font-family: Campton-Light;
+	font-size: 18px;
+	color: #3E3E3E;
+
+	padding-left: 8vw;
+	padding-right: 8vw;
+
+	margin-top: 4vw;
+}
+
+.heroTextContainer .subtext2{
+	margin-top: 15vw;
+	font-family: Campton-Light;
+	font-size: 10px;
+	color: #3E3E3E;
+}
+
+/*Sub Product*/
+/*Hero images*/
+/*ITEM SPECIFIC*/
+/********/
+/********/
+/*CUFF BRACELET*/
+.cuffVariant{
+	position: absolute;
+	margin-top: 50%;
+}
+.cuffFeature{
+	margin-top: 1% !important;
+}
+.cuffHeroCart{
+	margin-top: 15% !important;
+}
+
+/*Only For Sub product mains*/
+.priceDetailsCuff{
+	position: absolute;
+	margin-top: 12%;
+	width: 100%;
+	text-align: center;
+}
+
+
+
+.overlay{
+	position: absolute;
+	/*top: 0;*/
+	width: 100%;
+	height: 4500px;
+	z-index: 100;
+	/*opacity: 0.6;*/
+	text-align: center;
+
+	/*background: linear-gradient(#5A5A5A, rgba(255, 255, 255, 0.6));*/
+	background-color: rgba(156, 156, 156, 0.9);
+
+}
+
+.overlay .text{
+	padding-left: 4vw;
+	padding-right: 4vw;
+	margin-top: 7vw;
+}
+.overlay .text .header{
+	font-family: 'Campton-Bold';
+	color: #FFF;
+	font-size: 25px;
+}
+
+.overlay .text .subtext1{
+	font-family: 'Campton-Bold';
+	color: #FFF;
+	font-size: 15px;
+}
+
+.overlay .text .subtext2{
+	font-family: 'Campton-Light';
+	color: #FFF;
+	font-size: 12px;
+}
+
+.overlayForm{
+	position: fixed;
+	top: 50;
+	width: 100%;
+	height: 80%;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+
+}
+
+.overlayForm input{
+	-webkit-overflow-scrolling: touch;
+}
+
+.createAccount{
+	border: 3px solid #FFF;
+	border-radius: 5px;
+	background-color: transparent;
+	font-family: 'Campton-Light';
+	font-size: 16px;
+
+	margin-top: 2.5%;
+	color: #FFF;
+	padding: 14px 20px 10px 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+	.hero.center .heroFeature .title{
+		font-size: 30px;
+	}
+	.hero.center .heroFeature .subtext{
+		font-size: 20px;
+	}
+	.hero.center .heroFeature .heroCTA{
+		font-size: 15px;
+	}
+
+}
+
+@media only screen and (max-width: 780px) {
+	/*.hero{
+		height: 540px;
+	}*/
+	.hero.center .heroFeature .title{
+		font-size: 20px;
+	}
+	.hero.center .heroFeature .subtext{
+		font-size: 15px;
+	}
+	.hero.center .heroFeature .heroCTA{
+		font-size: 10px;
+	}
+	.hero.center .heroFeature{
+		margin-top: 0%;
+	}
+
+	.heroCart{
+	}
+
+
+	.hero.left .heroFeature{
+		width: 70%;
+		height: 5%;
+		position: absolute;
+		margin-left: 8%;
+		color: #5A5A5A;
+	}
+
+	.hero.right .heroFeature{
+		text-align: right;
+		width: 70%;
+		height: 5%;
+		position: absolute;
+		margin-left: 20%;
+		color: #5A5A5A;
+	}
+
+    .hero .heroFeature .title{
+		letter-spacing: 2px;
+		font-size: 15px;
+	}
+	.hero .heroFeature .subtext{
+		letter-spacing: 2px;
+		font-size: 10px;
+	}
+	.hero .heroFeature .heroCTA{
+		border: 1px solid #5A5A5A;
+		
+		background-color: #000;
+		color: #FFF;
+		border-radius: 4px;
+		font-size: 10px;
+		padding: 6px 20px 4px 20px;
+		margin-top: 20px;
+	}
+
+	/*Sub Product*/
+	/*Hero images*/
+	/*ITEM SPECIFIC*/
+	/********/
+	/********/
+	/*CUFF BRACELET*/
+	.priceSubtextCuff{
+		display: none;
+	}
+	.subtext2Cuff{
+		display: none;
+	}
+	.priceDetailsCuff{
+		margin-top: 10%;
+	}
+	.cuffHeroCart{
+		margin-top: 18% !important;
+	}
+	.cuffVariant{
+		margin-top: 54% !important;
+	}
+
+	.createAccount{
+		margin-top: 12vw;
+	}
+
+	.overlay{
+		width: 100%;
+	}
+}
+
+.mobile{
+	display: none !important;
+}
+
+.mobileProductPage{
+	display: none !important;
+}
+
+
+
+.mobile .heroFeature .heroCTA{
+	font-size: 13px;
+	padding: 14px 30px 10px 30px;
+}
+
+.hero.left.mobile .heroFeature{
+	position: absolute !important;
+	margin-left: 5% !important;
+
+}
+
+.hero.right.mobile .heroFeature{
+	position: absolute !important;
+	margin-right: 5% !important;
+
+}
+
+/*.overlay{
+	position: absolute;
+	width: 100%;
+	height: 10000px;
+	z-index: 1000;
+	background-color: #5A5A5A;
+	opacity: 0.6;
+	text-align: center;
+}
+
+.overlay .text{
+	font-family: Campton-Bold;
+	color: #FFF;
+	font-size: 50px;
+}*/
+
+
+
+
+@media only screen and (max-width: 780px) {
+	.heroProductPage{
+		display: none !important;
+	}
+	.mobileProductPage{
+		display: block !important;
+	}
+	.lock{
+		display: block !important;
+	}
+
+	.vintage .heroTextContainer{
+		margin-top: 1% !important;
+	}
+	.vintage .subtext2{
+		margin-top: 2% !important;
+	}
+	.vintage .title{
+		font-size: 35px;
+	}
+
+	.hero{
+		display: none !important;
+	}
+
+	.mobile{
+		display: block !important;
+	}
+	.mobileProductPage{
+		display: block !important;
+	}
+
+	.lock{
+		display: block !important;
+	}
+
+	.vintage{
+		display: none !important;
+	}
+	.featureOverlay{
+		background-color: rgba(0, 0, 0, 0.18);
+	}
+
+}
+
+@media only screen and (max-width: 540px) {
+	
+	
+	
+	
+}
+
+@media only screen and (max-width: 440px) {
+	.switchToWhiteInMainBlacks{
+		color: #FFF;
+	}
+	.switchToWhiteInMainBlacks input{
+		color: #FFF !important;
+	}
+	.lock{
+		display: block !important;
+	}
+}

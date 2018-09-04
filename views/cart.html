@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/shop/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/shop/navBar.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/cart.css">
+
+    <script src="https://sdks.shopifycdn.com/js-buy-sdk/v0/latest/shopify-buy.umd.polyfilled.min.js"></script>
+    <script src="../js/landing.js" /></script>
+    <script src="../js/signup.js" /></script>
+    <script src="../js/checkout.js" /></script>
+
+    <title>Aesthete</title>
+</head>
+
+<body>
+
+<% include header %>
+
+<table class="cartTable">
+<tr id="tableHeader">
+        <th class="mdl-data-table__cell--non-numeric basicHeader border"></th>
+        <th class="mdl-data-table__cell--non-numeric basicHeader border"></th>
+        <th class="mdl-data-table__cell--non-numeric basicHeader border"></th>
+        <th class="mdl-data-table__cell--non-numeric"> </th>
+      </tr>
+
+<tbody id="table_body"> </tbody>
+</table>
+
+</br>
+
+<input id="checkoutCart" type="button" value="Check Out"/>
+
+<% include footer %>
+
+</body>
+</html>

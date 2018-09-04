@@ -1,0 +1,297 @@
+@font-face {
+    font-family: Campton-Light;
+    src: url("../fonts/Campton-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Campton-SemiBold;
+    src: url("../fonts/Campton-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Campton-Bold;
+    src: url("../fonts/Campton-Bold.otf") format("opentype");
+}
+
+body{
+  overflow-x: hidden !important;
+}
+
+.bold{
+	font-family: Campton-Bold !important;
+}
+
+.smallerFont{
+	font-size: 14px !important;
+}
+
+.landing{
+	width: 100%;
+	height: 100%;
+}
+
+.text{
+	height: 720px !important;
+}
+
+.landing .hero{
+	width: 100%;
+	position: relative;
+}
+
+.landing .hero .image1{
+	width: 100%;
+}
+
+.landing .hero .heroFeature{
+	width: 500px;
+	height: 300px;
+	position: absolute;
+	margin-top: 6%;
+	margin-left: 8%;
+	color: #5A5A5A;
+}
+
+.landing .hero.text .heroFeature .title{
+	font-family: 'Campton-SemiBold';
+	letter-spacing: 2px;
+	font-size: 45px;
+}
+
+
+.landing .hero .heroFeature .title{
+	font-family: 'Campton-SemiBold';
+	letter-spacing: 2px;
+	font-size: 25px;
+}
+
+.landing .hero .heroFeature .subtext{
+	font-family: 'Campton-Light';
+	letter-spacing: 2px;
+	font-size: 18px;
+}
+
+.landing .hero .heroFeature .closing1{
+	font-family: 'HelveticaNeue-Bold';
+	letter-spacing: 2px;
+	font-size: 14px;
+}
+
+.landing .hero .heroFeature .closing2{
+	font-family: 'HelveticaNeue';
+	letter-spacing: 2px;
+	font-size: 10px;
+}
+
+.landing .hero .heroFeature .shop{
+	font-family: 'Campton-SemiBold';
+	border: 1px solid #000;
+	background-color: #000;
+	border-radius: 4px;
+	font-size: 11px;
+	padding: 12px 40px 8px 40px;
+	margin-top: 60px;
+	color: #FFF;
+}
+
+.landing .downArrow{
+	width: 30px;
+	height: 12px;
+	position: absolute;
+	bottom: 2vw;
+	left: 50vw;
+}
+
+.memberPortal{
+	height: 800px;
+	padding-bottom: 6vw;
+}
+
+.memberPortal .memberFeature{
+	color: #3E3E3E;
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	margin-top: 9%;
+	text-align: center;
+}
+
+.memberPortal .memberFeature .title{
+	font-family: 'Campton-Bold';
+	font-size: 35px;
+}
+
+.memberPortal .memberFeature .subtext{
+	font-family: 'Campton-Light';
+	font-size: 20px;
+}
+.memberPortal .memberFeature .subtext2{
+	font-family: 'Campton-Light';
+	font-size: 15px;
+}
+
+.memberPortal .memberFeature .subtext2Mobile{
+	font-family: 'Campton-Light';
+	font-size: 9px;
+	padding-top: 50%;
+	display: none;
+}
+
+.memberPortal .memberFeature input{
+	border: none;
+	background-color: transparent;
+	font-family: 'Campton-SemiBold';
+	font-size: 16px;
+	border: 2px solid #000;
+	padding: 15px 25px 10px 25px;
+	border-radius: 5px;
+}
+
+
+.loginAccount{
+	padding: 15px 32px 10.5px 32px !important;
+}
+
+.buttons{
+	width: 100%;
+	text-align: center;
+	margin-top: 20%;
+}
+
+
+/*mobile*/
+
+
+.landingMobile{
+	display: none !important;
+	width: 100%;
+	height:100%;
+/*
+	background-size: 100%;
+	background-repeat: no-repeat;*/
+}
+
+.landingMobile .hero{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.landingMobile .hero .image1{
+	width: 100%;
+	/*position: absolute;
+	top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	z-index:-1;*/
+}
+
+.landingMobile .heroText{
+	width: 96%;
+	position: absolute;
+	top: 8vw;
+	left: 4vw;
+	text-align: left;
+	/*background-color*/
+}
+
+
+.landingMobile .title{
+
+	font-family: 'Campton-SemiBold';
+	font-size: 24px;
+	color: #000;
+	width: 100%;
+}
+
+.landingMobile .subtext{
+	font-size: 15px;
+	color: #000;
+	padding-right: 10px;
+}
+
+.landingMobile .closing1{
+	font-size: 12px;
+	color: #000;
+	font-weight: bold;
+	position: absolute;
+	bottom: 1vw;
+	left: 4vw;
+	text-align: left;
+	width: 96%;
+}
+
+.landingMobile .closing2{
+	font-size: 12px;
+	color: #000;
+	font-weight: normal;
+}
+
+.landingMobile .shop{
+	font-family: 'Campton-SemiBold';
+	border: 1px solid #000;
+	background-color: #000;
+	color: #FFF;
+	border-radius: 4px;
+	font-size: 11px;
+	padding: 12px 40px 8px 40px;
+
+	position: absolute;
+	bottom: 16vw;
+	left: 4vw;
+}
+
+
+
+@media only screen and (max-width: 620px) {
+	.memberPortal .memberFeature{
+		width: 80%;
+		left: 10%;
+		padding-top: 10%;
+		
+	}
+	.memberPortal .memberFeature .title{
+		font-size: 25px;	
+	}
+	.landing .downArrow{
+		width: 45px;
+		height: 20px;
+		position: absolute;
+		bottom: 0;
+		left: 45vw;
+	}
+
+	.landing{
+		display: none !important;
+	}
+
+	.landingMobile{
+		display: block !important;
+		/*background-color: gray;*/
+	}
+
+	.memberPortal .memberFeature .subtext2{
+		font-family: 'Campton-Light';
+		font-size: 15px;
+		display: none;
+	}
+
+	.memberPortal .memberFeature .subtext2Mobile{
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 377px) {
+	.removeSpace{
+		display: none;
+	}
+	.loginAccount{
+		margin-top: 10px;
+	}
+}
+
+
+
+

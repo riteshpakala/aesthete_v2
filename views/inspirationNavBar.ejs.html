@@ -1,0 +1,34 @@
+<link rel="stylesheet" type="text/css" href="/css/shop/navBar.css">
+<script src="/js/navbar.js"> </script>
+
+<div class="navBar">
+	<% if (locals.featured) { %>
+	<input class="featuredButton" style = "font-weight: bold" id = "featuredButton" type="button" value="OUR STORY" />
+	<% }else{ %>
+    <input class="featuredButton" id = "featuredButton" type="button" value="OUR STORY" />
+    <% } %>
+
+    <% if (locals.tees) { %>
+    <input class="teesButton" style = "font-weight: bold" id = "teesButton" type="button" value="PRICING" />
+	<% }else{ %>
+    <input class="teesButton" id = "teesButton" type="button" value="PRICING" />
+    <% } %>
+
+    <% if (locals.boots) { %>
+    <input class="bootsButton" style = "font-weight: bold" id="bootsButton" type="button" value="SOURCING" />
+	<% }else{ %>
+    <input class="bootsButton" id="bootsButton" type="button" value="SOURCING" />
+    <% } %>
+
+    <% if (locals.coats) { %>
+    <input class="coatsButton" style = "font-weight: bold" id="coatsButton" type="button" value="BLOG" />
+	<% }else{ %>
+    <input class="coatsButton" id="coatsButton" type="button" value="BLOG" />
+    <% } %>
+
+    <% if (locals.vintage) { %>
+    <input class="vintageButton" style = "font-weight: bold" id="vintageButton" type="button" value="SUSTAINABILITY" />
+	<% }else{ %>
+    <input class="vintageButton" id="vintageButton" type="button" value="SUSTAINABILITY" />
+    <% } %>
+</div>

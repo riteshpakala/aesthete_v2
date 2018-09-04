@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<!--      
+      _/_/    
+   _/    _/          Designed by: Dustin Simantob
+  _/_/_/_/   _/  
+ _/    _/            Developed by: Ritesh Pakala
+_/    _/   
+
+-->
+
+<html lang="en">
+<head>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCLD3MQ');</script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
+    <meta property="og:image" content="/images/inspiration/blog/posts/1/1.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logos/favicon.ico">
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/shop/landing.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/hero.css">
+    <link rel="stylesheet" type="text/css" href="/css/inspiration.css">
+    <link rel="stylesheet" type="text/css" href="/css/blog.css">
+
+    <script src="https://sdks.shopifycdn.com/js-buy-sdk/v0/latest/shopify-buy.umd.polyfilled.min.js"></script>
+    <script src="../js/inspiration.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+        // console.log(inViewport($('div.blogText')));
+        if($('div.navBarGhost').css('display') == 'none'){
+            $('div.blogImageWrapper').css({width: $('div.navBar').width()});
+        }else{
+            $('div.blogImageWrapper').css({width: $('div.navBarGhost').width()});
+
+        }
+        // $('div.blogImage').css({height: 550+inViewport($('div.blogText'))-100});
+            $(window).resize(function(){
+
+               
+
+                if($('div.navBarGhost').css('display') == 'none'){
+                    $('div.blogImageWrapper').css({width: $('div.navBar').width()});
+                }else{
+                    $('div.blogImageWrapper').css({width: $('div.navBarGhost').width()});
+
+                }
+                // $('div.blogImage').css({height: 550+inViewport($('div.blogText'))-100});
+                // $('div.blogImageWrapper').css({top: $('div.navBar').offset().top});
+            });
+
+        });
+
+        // if (detectmob()){
+        //     // $('div.blogText').css({width: $('div.navBar').width()});
+        //     // $('div.blog').css({width: $('div.navBar').width()});
+        //     // alert("hello");
+        // }
+
+        // function detectmob() {
+        //    if(window.innerWidth <= 650) {
+        //      return true;
+        //    } else {
+        //      return false;
+        //    }
+        // }
+    </script>
+    
+    <title>Aesthete</title>
+</head>
+
+<body>
+
+<% include ../../../../header %>
+
+<% include ../../../../inspirationNavBar %>
+
+<!-- BLOG -->
+<div class="blogContainer">
+    <div class="blogImage">
+        <div class="blogImageWrapper">
+        <img id="blogHeaderImg" src="../images/inspiration/blog/posts/1/1.png"></img>
+        <img id="blogHeaderImgMobile" src="../images/inspiration/blog/posts/1/mobile/1.png"></img>
+        <img style = "visibility: hidden;" src="../images/inspiration/blog/posts/1/1.png"></img>
+        </div>
+    </div>
+    <div class="blogText">
+        <div class="blog" id="blog" style="text-align: center">
